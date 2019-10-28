@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["es2017"],
+    "moduleResolution": "node",
+    "skipLibCheck": false,
+    "declaration": true,
+    "removeComments": false,
+    "esModuleInterop": true,
+    "resolveJsonModule": true
+  },
+  "include": ["packages/**/*.ts"],
+  "exclude": ["packages/**/lib", "node_modules"]
+}
