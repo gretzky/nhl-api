@@ -18,8 +18,7 @@ const getTeamId = (name: string): number | Team[] => {
       team.nicknames.some(nickname => nickname.includes(name.toUpperCase()))
   );
   if (t.length > 1) {
-    // if a query matches more than 1 team, return an array of matching teams
-    // this will only happen if you query a team by a city that has had multiple teams (i.e. Toronto)
+    // if the query matches more than 1 team, return the array of players
     return t;
   } else {
     // team found, return the id

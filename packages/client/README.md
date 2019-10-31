@@ -1,17 +1,15 @@
 # @nhl-api/client
 
-Async request wrapper around the [NHL API](https://statsapi.web.nhl.com/api/v1).
+Async request wrapper around the [NHL API](https://statsapi.web.nhlApi.com/api/v1).
 
 ## Usage
 
 ```js
-import NhlApi from "@nhl-api/client"
+import nhlApi from "@nhl-api/client"
 
-const nhl = new NhlApi()
+nhlApi.getTeams({ name: "boston bruins" }).then(data => console.log(data))
 
-nhl.getTeams({ name: "boston bruins" }).then(data => console.log(data))
-
-nhl.getPlayer({ name: "wayne gretzky", stats: "statsSingleSeason", season: "19841985" }).then(data => console.log(data))
+nhlApi.getPlayer({ name: "wayne gretzky", stats: "statsSingleSeason", season: "19841985" }).then(data => console.log(data))
 ```
 
 ## API
@@ -23,18 +21,18 @@ Gets either a list of all teams, or individual team data.
 By default, it returns a list of all NHL teams.
 
 ```js
-nhl.getTeams() // returns an array of team objects
+nhlApi.getTeams() // returns an array of team objects
 ```
 
 You can pass in either `id` or `name` as an option to get an individual team.
 
 ```js
-nhl.getTeams({ id: 20 }) // calgary flames
-nhl.getTeams({ name: "boston" }) // boston bruins
-nhl.getTeams({ name: "caps" }) // washington capitals
+nhlApi.getTeams({ id: 20 }) // calgary flames
+nhlApi.getTeams({ name: "boston" }) // boston bruins
+nhlApi.getTeams({ name: "caps" }) // washington capitals
 
 // if you search for a team by location, and  that location has ever had more than 1 team, it will return an array of teams matching the query.
-nhl.getTeams({ name: "toronto" }) // returns an array with the Maple Leafs, St. Pats, and Arenas.
+nhlApi.getTeams({ name: "toronto" }) // returns an array with the Maple Leafs, St. Pats, and Arenas.
 ```
 
 #### Modifiers
@@ -44,13 +42,13 @@ nhl.getTeams({ name: "toronto" }) // returns an array with the Maple Leafs, St. 
 Expand modifiers don't require the `team.` prefix.
 
 ```js
-nhl.getTeams({ id: 6, expand: 'roster' }) // returns the current team roster
+nhlApi.getTeams({ id: 6, expand: 'roster' }) // returns the current team roster
 
-nhl.getTeams({ id: 6, expand: 'schedule.next' }) // returns the next game the team plays
+nhlApi.getTeams({ id: 6, expand: 'schedule.next' }) // returns the next game the team plays
 
-nhl.getTeams({ id: 6, expand: 'schedule.previous' }) // returns the last game a team played
+nhlApi.getTeams({ id: 6, expand: 'schedule.previous' }) // returns the last game a team played
 
-nhl.getTeams({ id: 6, expand: 'stats' }) // returns current season stats and rankings
+nhlApi.getTeams({ id: 6, expand: 'stats' }) // returns current season stats and rankings
 ```
 
 ### `getPlayer(options)`
@@ -58,17 +56,17 @@ nhl.getTeams({ id: 6, expand: 'stats' }) // returns current season stats and ran
 Gets data for a specific player. Requires at least 1 option param of either the player's name or ID.
 
 ```js
-nhl.getPlayer({ id: 8447400 })
-nhl.getPlayer({ name: 'wayne gretzky' })
+nhlApi.getPlayer({ id: 8447400 })
+nhlApi.getPlayer({ name: 'wayne gretzky' })
 // you can also search by nickname
-nhl.getPlayer({ name: 'the great one' })
+nhlApi.getPlayer({ name: 'the great one' })
 
 // searching by just first or last name will probably result in multiple players. 
 // these will be returned in an array of player objects.
-nhl.getPlayer({ name: 'gretzky' }) // returns brett and wayne
+nhlApi.getPlayer({ name: 'gretzky' }) // returns brett and wayne
 
 // nickname searches must be exact
-nhl.getPlayer({ name: 'ace bailey' })
+nhlApi.getPlayer({ name: 'ace bailey' })
 ```
 
 #### Modifiers
@@ -78,7 +76,7 @@ nhl.getPlayer({ name: 'ace bailey' })
 The only modifier this endpoint accepts is `stats`:
 
 ```js
-nhl.getPlayer({ name: 'wayne gretzky', stats: 'statsSingleSeason', season: '19801981' })
+nhlApi.getPlayer({ name: 'wayne gretzky', stats: 'statsSingleSeason', season: '19801981' })
 ```
 
 Accepted stat options:
@@ -103,7 +101,7 @@ Every stat option (except `yearByYear`) also requires a `season` param be passed
 Gets game scheduling information.
 
 ```js
-nhl.getSchedule() // by default it returns all games for the current day
+nhlApi.getSchedule() // by default it returns all games for the current day
 ```
 
 #### Modifiers
@@ -111,19 +109,19 @@ nhl.getSchedule() // by default it returns all games for the current day
 [Info](https://gitlab.com/dword4/nhlapi/blob/master/stats-api.md#schedule).
 
 ```js
-nhl.getSchedule({ expand: "schedule.broadcasts" }) // shows game broadcasts
+nhlApi.getSchedule({ expand: "schedule.broadcasts" }) // shows game broadcasts
 
-nhl.getSchedule({ expand: "schedule.linescore" }) // linescore for completed games
+nhlApi.getSchedule({ expand: "schedule.linescore" }) // linescore for completed games
 
-nhl.getSchedule({ id: 6 }) // gets today's games for a given team
-nhl.getSchedule({ team: "bruins" }) // same as above
+nhlApi.getSchedule({ id: 6 }) // gets today's games for a given team
+nhlApi.getSchedule({ team: "bruins" }) // same as above
 
-nhl.getSchedule({ date: "2019-10-27" }) // gets games for a given date
+nhlApi.getSchedule({ date: "2019-10-27" }) // gets games for a given date
 
-nhl.getSchedule({ startDate: "2019-09-30", endDate: "2019-10-14" }) // returns all games between a timeframe
+nhlApi.getSchedule({ startDate: "2019-09-30", endDate: "2019-10-14" }) // returns all games between a timeframe
 
 // modifiers can be combined
-nhl.getSchedule({
+nhlApi.getSchedule({
   team: "bruins",
   startDate: "2019-09-30",
   endDate: "2019-10-14"
@@ -135,7 +133,7 @@ nhl.getSchedule({
 Gets data from a specified game. Requires a game ID which can be retrieved from the [getSchedule](#getscheduleoptions) call, or you can [decipher the game ID yourself](https://gitlab.com/dword4/nhlapi/blob/master/stats-api.md#game-ids).
 
 ```js
-nhl.getGame({ id: 2019020174 }) // by default it calls the /feed/live endpoint
+nhlApi.getGame({ id: 2019020174 }) // by default it calls the /feed/live endpoint
 ```
 
 #### Modifiers
@@ -146,14 +144,14 @@ nhl.getGame({ id: 2019020174 }) // by default it calls the /feed/live endpoint
 // both of these return from the /feed/live endpoint
 // same as default
 // contains all details from a given game
-nhl.getGame({ id: 2019020174, type: "feed" })
-nhl.getGame({ id: 2019020174, type: "live" })
+nhlApi.getGame({ id: 2019020174, type: "feed" })
+nhlApi.getGame({ id: 2019020174, type: "live" })
 
-nhl.getGame({ id: 2019020174, type: "boxscore" }) // post-game details
+nhlApi.getGame({ id: 2019020174, type: "boxscore" }) // post-game details
 
-nhl.getGame({ id: 2019020174, type: "linescore" }) // less-detailed post-game details
+nhlApi.getGame({ id: 2019020174, type: "linescore" }) // less-detailed post-game details
 
-nhl.getGame({ id: 2019020174, type: "content" }) // returns media related to game
+nhlApi.getGame({ id: 2019020174, type: "content" }) // returns media related to game
 ```
 
 ### `getGameTypes()`
@@ -169,7 +167,7 @@ nhl.getGame({ id: 2019020174, type: "content" }) // returns media related to gam
 Returns several playoff-specific details.
 
 ```js
-nhl.getPlayoffs() // returns default playoff structure info
+nhlApi.getPlayoffs() // returns default playoff structure info
 ```
 
 [Info](https://gitlab.com/dword4/nhlapi/blob/master/stats-api.md#tournaments).
@@ -183,7 +181,7 @@ nhl.getPlayoffs() // returns default playoff structure info
 Returns standings broken up by division
 
 ```js
-nhl.getStandings()
+nhlApi.getStandings()
 ```
 
 #### Modifiers
@@ -191,17 +189,17 @@ nhl.getStandings()
 [Info](https://gitlab.com/dword4/nhlapi/blob/master/stats-api.md#standings)
 
 ```js
-nhl.getStandings({ season: '19911992' }) // standings for specific season
+nhlApi.getStandings({ season: '19911992' }) // standings for specific season
 
-nhl.getStandings({ date: '2019-09-30' }) // standings for a given day
+nhlApi.getStandings({ date: '2019-09-30' }) // standings for a given day
 
-nhl.getStandings({ expand: 'record' }) // gives detailed individual team info
+nhlApi.getStandings({ expand: 'record' }) // gives detailed individual team info
 ```
 
 You can use the `getStandingsType()` call to retrieve types to query standings by.
 
 ```js
-nhl.getStandings({ type: 'wildCardWithLeaders', date: '2019-01-01' }) // returns complete wildcard standings for a given day
+nhlApi.getStandings({ type: 'wildCardWithLeaders', date: '2019-01-01' }) // returns complete wildcard standings for a given day
 ```
 
 ### `getStandingsTypes()`
@@ -209,7 +207,7 @@ nhl.getStandings({ type: 'wildCardWithLeaders', date: '2019-01-01' }) // returns
 Returns standings types to use with `getStandings()`.
 
 ```js
-nhl.getStandingsTypes() // returns an array of all types
+nhlApi.getStandingsTypes() // returns an array of all types
 ```
 
 [Info](https://gitlab.com/dword4/nhlapi/blob/master/stats-api.md#standings-types).
@@ -219,9 +217,9 @@ nhl.getStandingsTypes() // returns an array of all types
 Get round-by-round draft data for a given year
 
 ```js
-nhl.getDraft() // returns current year by default
+nhlApi.getDraft() // returns current year by default
 
-nhl.getDraft({ year: '1985' }) // returns draft for a given year
+nhlApi.getDraft({ year: '1985' }) // returns draft for a given year
 ```
 
 [Info](https://gitlab.com/dword4/nhlapi/blob/master/stats-api.md#draft).
@@ -231,9 +229,9 @@ nhl.getDraft({ year: '1985' }) // returns draft for a given year
 [Info](https://gitlab.com/dword4/nhlapi/blob/master/stats-api.md#prospects)
 
 ```js
-nhl.getProspects() // returns a full list of prospects
+nhlApi.getProspects() // returns a full list of prospects
 
-nhl.getProspect({ id: 53727 }) // returns an individual prospect
+nhlApi.getProspect({ id: 53727 }) // returns an individual prospect
 ```
 
 **Note:** the `name` param cannot be used here, there's no database of all draft prospects to query.
@@ -243,8 +241,8 @@ nhl.getProspect({ id: 53727 }) // returns an individual prospect
 [Info](https://gitlab.com/dword4/nhlapi/blob/master/stats-api.md#awards)
 
 ```js
-nhl.getAwards() // returns all NHL awards
-nhl.getAward({ id: 1 }) // returns individual award
+nhlApi.getAwards() // returns all NHL awards
+nhlApi.getAward({ id: 1 }) // returns individual award
 ```
 
 ### `getVenues(options)`
@@ -252,8 +250,8 @@ nhl.getAward({ id: 1 }) // returns individual award
 [Info](https://gitlab.com/dword4/nhlapi/blob/master/stats-api.md#venues)
 
 ```js
-nhl.getVenues() // returns all venues
-nhl.getVenues({ id: 5064 }) // returns individual venue
+nhlApi.getVenues() // returns all venues
+nhlApi.getVenues({ id: 5064 }) // returns individual venue
 ```
 
 ### `getDivisions(options)`
@@ -261,8 +259,8 @@ nhl.getVenues({ id: 5064 }) // returns individual venue
 [Info](https://gitlab.com/dword4/nhlapi/blob/master/stats-api.md#divisions)
 
 ```js
-nhl.getDivisions() // returns all divisons
-nhl.getDivisions({ id: 17 }) // returns individual division
+nhlApi.getDivisions() // returns all divisons
+nhlApi.getDivisions({ id: 17 }) // returns individual division
 ```
 
 ### `getConferences(options)`
@@ -270,8 +268,8 @@ nhl.getDivisions({ id: 17 }) // returns individual division
 [Info](https://gitlab.com/dword4/nhlapi/blob/master/stats-api.md#conferences)
 
 ```js
-nhl.getConferences() // returns all conferences
-nhl.getConferences({ id: 5 }) // returns individual conferece
+nhlApi.getConferences() // returns all conferences
+nhlApi.getConferences({ id: 5 }) // returns individual conferece
 ```
 
 ## Props

@@ -245,7 +245,7 @@ class NHLApi {
       ) {
         this.throwSeasonFormattingError("getSeasons");
       }
-      url = `${baseUrl}/${options.season}`;
+      url = `${baseUrl}?${qs.stringify(options)}`;
     } else {
       url = baseUrl;
     }
@@ -290,7 +290,7 @@ class NHLApi {
         .then(data => this.parseData(data.records));
       return Promise.resolve(response);
     } catch (err) {
-      console.error(err);
+      this.throwError("getStandings", err);
     }
   }
 
@@ -302,7 +302,7 @@ class NHLApi {
         .then(data => data);
       return Promise.resolve(response);
     } catch (err) {
-      console.error(err);
+      this.throwError("getStandingsTypes", err);
     }
   }
 
@@ -327,12 +327,12 @@ class NHLApi {
         .then(data => this.parseData(data.drafts));
       return Promise.resolve(response);
     } catch (err) {
-      console.error(err);
+      this.throwError("getDraft", err);
     }
   }
 
   public async getProspects(options?: any): Promise<void> {
-    const url = this.getUrl("prospects", options);
+    const url = this.getUrl("draft/prospects", options);
 
     try {
       const response = await axios
@@ -341,7 +341,7 @@ class NHLApi {
         .then(data => this.parseData(data.prospects));
       return Promise.resolve(response);
     } catch (err) {
-      console.error(err);
+      this.throwError("getProspects", err);
     }
   }
 
@@ -355,7 +355,7 @@ class NHLApi {
         .then(data => this.parseData(data.awards));
       return Promise.resolve(response);
     } catch (err) {
-      console.error(err);
+      this.throwError("getAwards", err);
     }
   }
 
@@ -369,7 +369,7 @@ class NHLApi {
         .then(data => this.parseData(data.venues));
       return Promise.resolve(response);
     } catch (err) {
-      console.error(err);
+      this.throwError("getVenues", err);
     }
   }
 
@@ -383,7 +383,7 @@ class NHLApi {
         .then(data => this.parseData(data.divisions));
       return Promise.resolve(response);
     } catch (err) {
-      console.error(err);
+      this.throwError("getDivisions", err);
     }
   }
 
@@ -397,7 +397,7 @@ class NHLApi {
         .then(data => this.parseData(data.conferences));
       return Promise.resolve(response);
     } catch (err) {
-      console.error(err);
+      this.throwError("getConferences", err);
     }
   }
 
@@ -422,7 +422,7 @@ class NHLApi {
         });
       return Promise.resolve(response);
     } catch (err) {
-      console.error(err);
+      this.throwError("getPlayoffs", err);
     }
   }
 }

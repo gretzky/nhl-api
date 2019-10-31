@@ -19,7 +19,7 @@
     "clean": "rimraf lib",
     "build": "tsc --outDir lib --declarationDir lib"
   },
-  "dependencies": {
+  "devDependencies": {
     "axios": "^0.19.0",
     "querystring": "^0.2.0"
   }
