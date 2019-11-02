@@ -7,9 +7,17 @@ Async request wrapper around the [NHL API](https://statsapi.web.nhlApi.com/api/v
 ```js
 import nhlApi from "@nhl-api/client"
 
-nhlApi.getTeams({ name: "boston bruins" }).then(data => (data))
+nhlApi
+  .getTeams({ name: "boston bruins" })
+  .then(data => console.log(data))
 
-nhlApi.getPlayer({ name: "wayne gretzky", stats: "statsSingleSeason", season: "19841985" }).then(data => (data))
+nhlApi
+  .getPlayer({
+    name: "wayne gretzky",
+    stats: "statsSingleSeason",
+    season: "19841985"
+  })
+  .then(data => console.log(data))
 ```
 
 ## API
