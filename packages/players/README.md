@@ -28,7 +28,7 @@ import players, { getPlayerId } from '@nhl-api/players'
 import axios from 'axios' // for http requests
 
 // at its simplest, you can do whatever you want with the list of players
-// console.log(players.map(p => p.fullName))
+// (players.map(p => p.fullName))
 
 // using the `getPlayerId` helper,
 // you can get the player's id from their name
@@ -43,7 +43,7 @@ const gretzkyId = getPlayerId("the great one")
 axios
   .get(`https://statsapi.web.nhl.com/api/v1/people/${gretzkyId}`)
   .then(response => response.data)
-  .then(data => console.log(data))
+  .then(data => (data))
 ```
 
 ## Props

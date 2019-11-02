@@ -17,7 +17,7 @@
   },
   "scripts": {
     "clean": "rimraf lib",
-    "build": "tsc --outDir lib --declarationDir lib"
+    "build": "yarn clean && tsc --outDir lib --declarationDir lib"
   },
   "devDependencies": {
     "axios": "^0.19.0",

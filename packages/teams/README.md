@@ -23,7 +23,7 @@ import teams, { getTeamId } from '@nhl-api/teams'
 import axios from 'axios' // for http requests
 
 // at its simplest, you can do whatever you want with the full list
-// console.log(teams.map(t => t.name))
+// (teams.map(t => t.name))
 
 // using the `getTeamId` helper,
 // you can get the team id from the team name
@@ -38,7 +38,7 @@ const bruinsId = getTeamId("big bad bruins")
 axios
   .get(`https://statsapi.web.nhl.com/api/v1/teams/${bruinsId}`)
   .then(response => response.data)
-  .then(data => console.log(data))
+  .then(data => (data))
 ```
 
 ## Props

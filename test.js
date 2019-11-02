@@ -69,7 +69,7 @@ async function getTeams(options) {
             }
           : null
       )
-      .then(res => console.log(handleData("teams", res.data)));
+      .then(res => handleData("teams", res.data));
     return Promise.resolve(response);
   } catch (e) {
     return e;
@@ -145,7 +145,7 @@ async function getPlayer(options) {
 //             }
 //           : null
 //       )
-//       .then(res => console.log(handleData("people", res.data)));
+//       .then(res => (handleData("people", res.data)));
 //     return Promise.resolve(response);
 //   } catch (e) {
 //     return e;
@@ -153,6 +153,6 @@ async function getPlayer(options) {
 // }
 
 // getTeam({ id: 6, expand: "stats", season: "20102011" }).then(data =>
-//   console.log(data)
+//   (data)
 // );
-getPlayer({ id: 8477474 }).then(data => console.log(data));
+getPlayer({ id: 8477474 }).then(data => data);
