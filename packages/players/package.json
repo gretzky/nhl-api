@@ -2,8 +2,8 @@
   "name": "@nhl-api/players",
   "version": "1.0.1",
   "license": "MIT",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "lib/players/index.js",
+  "types": "lib/players/index.d.ts",
   "files": [
     "lib"
   ],

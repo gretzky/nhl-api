@@ -2,8 +2,8 @@
   "name": "@nhl-api/teams",
   "version": "1.0.1",
   "license": "MIT",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "lib/teams/index.js",
+  "types": "lib/teams/index.d.ts",
   "files": [
     "lib"
   ],
