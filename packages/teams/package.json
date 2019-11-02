@@ -1,0 +1,23 @@
+{
+  "name": "@nhl-api/teams",
+  "version": "1.0.1",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Sara Pope <sarafpope@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gretzky/nhl-api"
+  },
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "yarn clean && tsc --outDir lib --declarationDir lib"
+  },
+  "gitHead": "f500b6b2fdc732cb44d87cf9f0b10534dae5193a"
+}
