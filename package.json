@@ -17,7 +17,7 @@
     "postinstall": "lerna bootstrap",
     "clean": "lerna run --stream clean",
     "build": "lerna run --stream build",
-    "test": "jest --detectOpenHandles --coverage",
+    "test": "jest --coverage",
     "prepare": "yarn build"
   },
   "publishConfig": {
