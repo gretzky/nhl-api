@@ -1,0 +1,25 @@
+language: node_js
+
+node_js:
+  - "node"
+  - "lts/*"
+
+install:
+  - yarn install
+
+jobs:
+  include:
+    - stage: Test
+      script:
+        - yarn test && cat ./coverage/lcov.info | coveralls
+        - yarn build
+    - stage: Release
+      script: yarn build
+      deploy:
+        provider: npm
+        email: "$NPM_EMAIL"
+        api_key: "$NPM_TOKEN"
+        skip_cleanup: true
+branches:
+  only:
+    - master
