@@ -116,10 +116,14 @@ nhlApi.getSchedule() // by default it returns all games for the current day
 
 [Info](https://gitlab.com/dword4/nhlapi/blob/master/stats-api.md#schedule).
 
-```js
-nhlApi.getSchedule({ expand: "schedule.broadcasts" }) // shows game broadcasts
+Modifiers don't require the `schedule.` prefix.
 
-nhlApi.getSchedule({ expand: "schedule.linescore" }) // linescore for completed games
+```js
+nhlApi.getSchedule({ expand: "broadcasts" }) // shows game broadcasts
+
+nhlApi.getSchedule({ expand: "boxscore" }) // boxscore for completed games
+
+nhlApi.getSchedule({ expand: "linescore" }) // linescore for completed games
 
 nhlApi.getSchedule({ id: 6 }) // gets today's games for a given team
 nhlApi.getSchedule({ team: "bruins" }) // same as above
