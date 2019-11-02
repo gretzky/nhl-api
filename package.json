@@ -13,7 +13,7 @@
     "packages/*"
   ],
   "scripts": {
-    "publish": "lerna publish --force-publish",
+    "publish": "lerna publish from-git --yes --npm-client yarn",
     "postinstall": "lerna bootstrap",
     "clean": "lerna run --stream clean",
     "build": "lerna run --stream build",
