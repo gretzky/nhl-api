@@ -12,12 +12,10 @@ jobs:
         uses: actions/setup-node@master
         with:
           version: 10.x
-      - run: |
-          npm i -g yarn
-          yarn
-      - run: |
-          yarn test --coverageReporters=text-lcov | coveralls
-          make test-coverage
+      - run: npm i -g yarn
+      - run: yarn
+      - run: yarn test --coverageReporters=text-lcov | coveralls
+      - run: make test-coverage
       - name: coveralls
         uses: coverallsapp/github-action@master
         with:
