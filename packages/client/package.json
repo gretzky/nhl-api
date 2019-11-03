@@ -1,6 +1,6 @@
 {
   "name": "@nhl-api/client",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "license": "MIT",
   "main": "lib/src/index.js",
   "types": "lib/src/index.d.ts",
@@ -22,8 +22,8 @@
     "build": "tsc -b"
   },
   "dependencies": {
-    "@nhl-api/players": "^1.2.5",
-    "@nhl-api/teams": "^1.2.5",
+    "@nhl-api/players": "^1.2.6",
+    "@nhl-api/teams": "^1.2.6",
     "axios": "^0.19.0"
   }
 }
