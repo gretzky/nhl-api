@@ -2,8 +2,8 @@
   "name": "@nhl-api/players",
   "version": "1.1.0",
   "license": "MIT",
-  "main": "lib/players/index.js",
-  "types": "lib/players/index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
     "lib"
   ],
@@ -17,7 +17,7 @@
   },
   "scripts": {
     "clean": "rimraf lib",
-    "build": "yarn clean && tsc --outDir lib --declarationDir lib"
+    "build": "tsc"
   },
   "gitHead": "f500b6b2fdc732cb44d87cf9f0b10534dae5193a"
 }

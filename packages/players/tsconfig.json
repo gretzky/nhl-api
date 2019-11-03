@@ -9,12 +9,7 @@
     "removeComments": false,
     "esModuleInterop": true,
     "resolveJsonModule": true,
-    "outDir": "lib",
-    "baseUrl": "./",
-    "paths": {
-      "@nhl/*": ["packages/*/src"]
-    }
+    "outDir": "lib"
   },
-  // "include": ["packages/**/*.ts"],
-  "exclude": ["packages/**/lib", "node_modules"]
+  "exclude": ["test"]
 }

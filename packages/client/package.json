@@ -2,10 +2,12 @@
   "name": "@nhl-api/client",
   "version": "1.1.0",
   "license": "MIT",
-  "main": "lib/client/index.js",
-  "types": "lib/client/index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
-    "lib"
+    "lib",
+    "src",
+    "index.ts"
   ],
   "publishConfig": {
     "access": "public"
@@ -17,7 +19,7 @@
   },
   "scripts": {
     "clean": "rimraf lib",
-    "build": "yarn clean && tsc --outDir lib --declarationDir lib"
+    "build": "tsc"
   },
   "devDependencies": {
     "axios": "^0.19.0"

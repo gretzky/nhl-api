@@ -16,6 +16,7 @@
     "publish": "lerna publish from-git --yes --force-publish",
     "postinstall": "lerna bootstrap",
     "clean": "lerna run --stream clean",
+    "prebuild": "yarn run clean",
     "build": "lerna run --stream build",
     "test": "jest --coverage",
     "prepare": "yarn build"
@@ -32,6 +33,11 @@
     "jest": "^24.9.0",
     "lerna": "^3.18.3",
     "rimraf": "^3.0.0",
+    "rollup": "^1.26.3",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript2": "^0.24.3",
     "ts-jest": "^24.1.0",
     "typescript": "^3.6.4"
   }
