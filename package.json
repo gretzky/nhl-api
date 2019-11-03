@@ -1,6 +1,6 @@
 {
   "name": "nhl-api",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "main": "index.js",
   "license": "MIT",
   "private": true,
@@ -13,7 +13,7 @@
     "packages/*"
   ],
   "scripts": {
-    "publish": "lerna publish from-git --yes --force-publish",
+    "publish": "lerna publish --force-publish",
     "postinstall": "lerna bootstrap",
     "clean": "lerna run clean",
     "prebuild": "yarn run clean",
