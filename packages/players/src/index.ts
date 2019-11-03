@@ -1,4 +1,4 @@
-import players from "./players.json";
+import players from "./players";
 
 interface Player {
   id: number;

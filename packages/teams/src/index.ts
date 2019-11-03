@@ -1,4 +1,4 @@
-import teams from "./teams.json";
+import teams from "./teams";
 
 interface Team {
   id: number;

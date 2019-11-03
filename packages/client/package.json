@@ -2,8 +2,8 @@
   "name": "@nhl-api/client",
   "version": "1.2.4",
   "license": "MIT",
-  "main": "lib/client/index.js",
-  "types": "lib/client/index.d.ts",
+  "main": "lib/src/index.js",
+  "types": "lib/src/index.d.ts",
   "files": [
     "lib",
     "src",

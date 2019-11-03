@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "commonjs",
+    "declaration": true,
+    "composite": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true
+  }
+}

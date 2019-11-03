@@ -1,4 +1,4 @@
-[
+export default [
   {
      "id": 8471276,
      "name": "DAVID KREJCI",
