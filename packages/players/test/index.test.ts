@@ -1,4 +1,4 @@
-import { getPlayerId } from "..";
+import { getPlayerId } from "../src";
 
 const mock = [
   {

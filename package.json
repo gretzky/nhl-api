@@ -15,9 +15,9 @@
   "scripts": {
     "publish": "lerna publish from-git --yes --force-publish",
     "postinstall": "lerna bootstrap",
-    "clean": "lerna run --stream clean",
+    "clean": "lerna run clean",
     "prebuild": "yarn run clean",
-    "build": "lerna run --stream build",
+    "build": "lerna run build",
     "test": "jest --coverage",
     "prepare": "yarn build"
   },
