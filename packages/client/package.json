@@ -1,6 +1,6 @@
 {
   "name": "@nhl-api/client",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "license": "MIT",
   "main": "lib/client/index.js",
   "types": "lib/client/index.d.ts",
@@ -19,11 +19,11 @@
   },
   "scripts": {
     "clean": "rimraf lib",
-    "build": "tsc"
+    "build": "tsc -b"
   },
   "dependencies": {
-    "@nhl-api/players": "^1.2.3",
-    "@nhl-api/teams": "^1.2.3",
+    "@nhl-api/players": "^1.2.4",
+    "@nhl-api/teams": "^1.2.4",
     "axios": "^0.19.0"
   }
 }
