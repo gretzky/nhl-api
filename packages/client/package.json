@@ -21,8 +21,9 @@
     "clean": "rimraf lib",
     "build": "tsc"
   },
-  "devDependencies": {
-    "axios": "^0.19.0"
-  },
-  "gitHead": "f500b6b2fdc732cb44d87cf9f0b10534dae5193a"
+  "dependencies": {
+    "axios": "^0.19.0",
+    "@nhl-api/players": "^1.2.1",
+    "@nhl-api/teams": "^1.2.1"
+  }
 }
