@@ -1,0 +1,27 @@
+{
+  "name": "@nhl-api/play-by-play",
+  "version": "1.2.6",
+  "license": "MIT",
+  "main": "lib/src/index.js",
+  "types": "lib/src/index.d.ts",
+  "files": [
+    "lib",
+    "src",
+    "index.ts"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Sara Pope <sarafpope@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gretzky/nhl-api"
+  },
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "tsc -b"
+  },
+  "dependencies": {
+    "@nhl-api/client": "^1.2.6"
+  }
+}
