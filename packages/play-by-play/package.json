@@ -1,6 +1,6 @@
 {
   "name": "@nhl-api/play-by-play",
-  "version": "1.2.6",
+  "version": "1.3.0",
   "license": "MIT",
   "main": "lib/src/index.js",
   "types": "lib/src/index.d.ts",
@@ -22,6 +22,6 @@
     "build": "tsc -b"
   },
   "dependencies": {
-    "@nhl-api/client": "^1.2.6"
+    "@nhl-api/client": "^1.3.0"
   }
 }
