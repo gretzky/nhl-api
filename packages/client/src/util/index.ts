@@ -113,7 +113,6 @@ export async function get(res: string, options?: Options): Promise<void> {
     } else {
       url = baseUrl;
     }
-    url;
     return url;
   };
 
