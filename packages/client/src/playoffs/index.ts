@@ -1,8 +1,10 @@
-import { get, throwError, Options } from "../util";
+import { get, throwError, Options, handleUrl } from "../util";
 
 export default async function getPlayoffs(options?: Options): Promise<void> {
+  const baseUrl = handleUrl("tournaments/playoffs", options);
+
   try {
-    const response = await get("tournaments/playoffs", options).then(
+    const response = await get("tournaments/playoffs", baseUrl, options).then(
       res => res
     );
     return Promise.resolve(response);

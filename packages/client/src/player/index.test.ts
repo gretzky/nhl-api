@@ -275,7 +275,9 @@ test("gets player projected stats", async () => {
   expect(t).toHaveProperty(
     "splits",
     expect.arrayContaining([
-      expect.objectContaining({ stat: expect.objectContaining({ goals: 82 }) })
+      expect.objectContaining({
+        stat: expect.objectContaining({ goals: expect.anything() })
+      })
     ])
   );
 });

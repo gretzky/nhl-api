@@ -2,7 +2,7 @@ export default [
   {
     id: 1,
     name: "NEW JERSEY DEVILS",
-    abbrev: "NJD",
+    abbreviation: "NJD",
     nicknames: ["DEVS"],
     colors: ["#F47A38", "#B9975C", "#C1C6C8", "#000"],
     logo:
@@ -11,7 +11,7 @@ export default [
   {
     id: 2,
     name: "NEW YORK ISLANDERS",
-    abbrev: "NYI",
+    abbreviation: "NYI",
     nicknames: ["ISLES", "FISHSTICKS", "FISH STICKS"],
     colors: ["#00539B", "#F47D30"],
     logo:
@@ -20,7 +20,7 @@ export default [
   {
     id: 3,
     name: "NEW YORK RANGERS",
-    abbrev: "NYR",
+    abbreviation: "NYR",
     nicknames: ["BLUESHIRTS", "RAGS"],
     colors: ["#0038A8", "#C31126", "#FFF"],
     logo:
@@ -29,7 +29,7 @@ export default [
   {
     id: 4,
     name: "PHILADELPHIA FLYERS",
-    abbrev: "PHI",
+    abbreviation: "PHI",
     nicknames: ["BROAD ST. BULLIES"],
     colors: ["#F74902", "#000", "#FFF"],
     logo:
@@ -38,7 +38,7 @@ export default [
   {
     id: 5,
     name: "PITTSBURGH PENGUINS",
-    abbrev: "PIT",
+    abbreviation: "PIT",
     nicknames: ["SHITTSBURGH", "PENS"],
     colors: ["#000", "#CFC493", "#FCB514", "#FFF"],
     logo:
@@ -47,7 +47,7 @@ export default [
   {
     id: 6,
     name: "BOSTON BRUINS",
-    abbrev: "BOS",
+    abbreviation: "BOS",
     nicknames: ["B'S", "BIG BAD BRUINS", "BLACK AND GOLD"],
     colors: ["#000", "#FFB81C"],
     logo:
@@ -56,7 +56,7 @@ export default [
   {
     id: 7,
     name: "BUFFALO SABRES",
-    abbrev: "BUF",
+    abbreviation: "BUF",
     nicknames: ["SWORDS", "SLUGS"],
     colors: ["#002654", "#FCB514", "#ADAFAA", "#C8102E"],
     logo:
@@ -65,7 +65,7 @@ export default [
   {
     id: 8,
     name: "MONTREAL CANADIENS",
-    abbrev: "MTL",
+    abbreviation: "MTL",
     nicknames: ["HABS", "HABITANTS", "BLEU-BLANC-ROUGE", "TOILET BOWLS"],
     colors: ["#AF1E2D", "#192168"],
     logo:
@@ -74,7 +74,7 @@ export default [
   {
     id: 9,
     name: "OTTAWA SENATORS",
-    abbrev: "OTT",
+    abbreviation: "OTT",
     nicknames: ["SENS"],
     colors: ["#C52032", "#C2912C", "#000", "#FFF"],
     logo:
@@ -83,7 +83,7 @@ export default [
   {
     id: 10,
     name: "TORONTO MAPLE LEAFS",
-    abbrev: "TOR",
+    abbreviation: "TOR",
     nicknames: ["LEAFS", "CRY BABIES"],
     colors: ["#00205B", "#FFF"],
     logo:
@@ -92,7 +92,7 @@ export default [
   {
     id: 11,
     name: "ATLANTA THRASHERS",
-    abbrev: "ATL",
+    abbreviation: "ATL",
     nicknames: ["THRASH"],
     colors: ["#041E42", "#5C88DA", "#862633", "#B76125", "#FFA300", "#FFF"],
     logo:
@@ -101,7 +101,7 @@ export default [
   {
     id: 12,
     name: "CAROLINA HURRICANES",
-    abbrev: "CAR",
+    abbreviation: "CAR",
     nicknames: ["CANES", "JERKS"],
     colors: ["#CC0000", "#000", "#A2AAAD", "#76232F"],
     logo:
@@ -110,7 +110,7 @@ export default [
   {
     id: 13,
     name: "FLORIDA PANTHERS",
-    abbrev: "FLA",
+    abbreviation: "FLA",
     nicknames: ["CATS"],
     colors: ["#041E42", "#C8102E", "#B9975B"],
     logo:
@@ -119,7 +119,7 @@ export default [
   {
     id: 14,
     name: "TAMPA BAY LIGHTNING",
-    abbrev: "TBL",
+    abbreviation: "TBL",
     nicknames: ["BOLTS"],
     colors: ["#002868", "#FFF"],
     logo:
@@ -128,7 +128,7 @@ export default [
   {
     id: 15,
     name: "WASHINGTON CAPITALS",
-    abbrev: "WSH",
+    abbreviation: "WSH",
     nicknames: ["CAPS", "SECOND ROUND EXIT"],
     colors: ["#041E42", "#C8102E", "#FFF"],
     logo:
@@ -137,7 +137,7 @@ export default [
   {
     id: 16,
     name: "CHICAGO BLACKHAWKS",
-    abbrev: "CHI",
+    abbreviation: "CHI",
     nicknames: ["HAWKS"],
     colors: [
       "#CF0A2C",
@@ -155,7 +155,7 @@ export default [
   {
     id: 17,
     name: "DETROIT RED WINGS",
-    abbrev: "DET",
+    abbreviation: "DET",
     nicknames: ["DEAD WINGS", "WINGS"],
     colors: ["#CE1126", "#FFF"],
     logo:
@@ -164,7 +164,7 @@ export default [
   {
     id: 18,
     name: "NASHVILLE PREDATORS",
-    abbrev: "NSH",
+    abbreviation: "NSH",
     nicknames: ["PREDS", "SMASHVILLE"],
     colors: ["#FFB81C", "#041E42", "#FFF"],
     logo:
@@ -173,7 +173,7 @@ export default [
   {
     id: 19,
     name: "ST. LOUIS BLUES",
-    abbrev: "STL",
+    abbreviation: "STL",
     nicknames: ["NOTES", "THE NOTES"],
     colors: ["#002F87", "#FCB514", "#041E42", "#FFF"],
     logo:
@@ -182,7 +182,7 @@ export default [
   {
     id: 20,
     name: "CALGARY FLAMES",
-    abbrev: "CGY",
+    abbreviation: "CGY",
     nicknames: ["FLAMING SNOT DONKEYS", "FLAMING C'S"],
     colors: ["#C8102E", "#F1BE48", "#111", "#FFF"],
     logo:
@@ -191,7 +191,7 @@ export default [
   {
     id: 21,
     name: "COLORADO AVALANCHE",
-    abbrev: "COL",
+    abbreviation: "COL",
     nicknames: ["AVS"],
     colors: ["#6F263D", "#236192", "#A2AAAD", "#000"],
     logo:
@@ -200,7 +200,7 @@ export default [
   {
     id: 22,
     name: "EDMONTON OILERS",
-    abbrev: "EDM",
+    abbreviation: "EDM",
     nicknames: ["SPOILERS"],
     colors: ["#041E42", "#FF4C00"],
     logo:
@@ -209,7 +209,7 @@ export default [
   {
     id: 23,
     name: "VANCOUVER CANUCKS",
-    abbrev: "VAN",
+    abbreviation: "VAN",
     nicknames: ["NUCKS", "CANUCKLEHEADS"],
     colors: ["#00205B", "#00843D", "#041C2C", "#99999A", "#FFF"],
     logo:
@@ -218,7 +218,7 @@ export default [
   {
     id: 24,
     name: "ANAHEIM DUCKS",
-    abbrev: "ANA",
+    abbreviation: "ANA",
     nicknames: ["MIGHTY DUCKS"],
     colors: [
       "#F47A38",
@@ -236,7 +236,7 @@ export default [
   {
     id: 25,
     name: "DALLAS STARS",
-    abbrev: "DAL",
+    abbreviation: "DAL",
     nicknames: ["SHERIFFS"],
     colors: ["#006847", "#8F8F8C", "#111"],
     logo:
@@ -245,7 +245,7 @@ export default [
   {
     id: 26,
     name: "LOS ANGELES KINGS",
-    abbrev: "LAK",
+    abbreviation: "LAK",
     nicknames: ["MONARCHS"],
     colors: ["#111", "#A2AAAD", "#FFF", "#572A84", "#FFC80C"],
     logo:
@@ -254,7 +254,7 @@ export default [
   {
     id: 53,
     name: "ARIZONA COYOTES",
-    abbrev: "ARI",
+    abbreviation: "ARI",
     nicknames: ["YOTES"],
     colors: [
       "#8C2633",
@@ -271,7 +271,7 @@ export default [
   {
     id: 28,
     name: "SAN JOSE SHARKS",
-    abbrev: "SJS",
+    abbreviation: "SJS",
     nicknames: ["FINS", "TUNA", "TEAM TEAL"],
     colors: ["#006D75", "#000", "#EA7200", "#FFF"],
     logo:
@@ -280,7 +280,7 @@ export default [
   {
     id: 29,
     name: "COLUMBUS BLUE JACKETS",
-    abbrev: "CBJ",
+    abbreviation: "CBJ",
     nicknames: ["JACKETS", "CANNONS"],
     colors: ["#002654", "#CE1126", "#A4A9AD"],
     logo:
@@ -289,7 +289,7 @@ export default [
   {
     id: 30,
     name: "MINNESOTA WILD",
-    abbrev: "MIN",
+    abbreviation: "MIN",
     nicknames: ["MINNY", "MILD", "MANBEARPIGS"],
     colors: ["#A6192E", "#154734", "#EAAA00", "#DDCBA4"],
     logo:
@@ -298,7 +298,7 @@ export default [
   {
     id: 54,
     name: "VEGAS GOLDEN KNIGHTS",
-    abbrev: "VGK",
+    abbreviation: "VGK",
     nicknames: ["GOLDEN MISFITS", "KNIGHTS"],
     colors: ["#B4975A", "#333F42", "#C8102E", "#000", "#FFF"],
     logo:
@@ -307,7 +307,7 @@ export default [
   {
     id: 52,
     name: "WINNIPEG JETS",
-    abbrev: "WPG",
+    abbreviation: "WPG",
     nicknames: ["AIRFORCE"],
     colors: [
       "#041E42",
@@ -324,7 +324,7 @@ export default [
   {
     id: 38,
     name: "PITTSBURGH PIRATES",
-    abbrev: "PIR",
+    abbreviation: "PIR",
     nicknames: [],
     colors: ["#000", "#FCB932", "#FFF", "#F87A36"],
     logo:
@@ -333,7 +333,7 @@ export default [
   {
     id: 58,
     name: "TORONTO ST. PATRICKS",
-    abbrev: "TSP",
+    abbreviation: "TSP",
     nicknames: [],
     colors: ["#046A38", "#FFF"],
     logo:
@@ -342,7 +342,7 @@ export default [
   {
     id: 49,
     name: "CLEVELAND BARONS",
-    abbrev: "CLE",
+    abbreviation: "CLE",
     nicknames: [],
     colors: ["#C8102E", "#000", "#FFF"],
     logo:
@@ -351,7 +351,7 @@ export default [
   {
     id: 46,
     name: "OAKLAND SEALS",
-    abbrev: "OAK",
+    abbreviation: "OAK",
     nicknames: [],
     colors: ["#046A38", "#0033A0", "#FFF", "#FFC72C", "#009CA6"],
     logo:
@@ -360,7 +360,7 @@ export default [
   {
     id: 44,
     name: "NEW YORK AMERICANS",
-    abbrev: "NYA",
+    abbreviation: "NYA",
     nicknames: [],
     colors: ["#0038A8", "#C31126", "#FFF"],
     logo:
@@ -369,7 +369,7 @@ export default [
   {
     id: 56,
     name: "CALIFORNIA GOLDEN SEALS",
-    abbrev: "CGS",
+    abbreviation: "CGS",
     nicknames: [],
     colors: ["#046A38", "#0033A0", "#FFF", "#FFC72C", "#009CA6"],
     logo:
@@ -378,7 +378,7 @@ export default [
   {
     id: 34,
     name: "HARTFORD WHALERS",
-    abbrev: "HFD",
+    abbreviation: "HFD",
     nicknames: [],
     colors: [
       "#00B140",
@@ -396,7 +396,7 @@ export default [
   {
     id: 47,
     name: "ATLANTA FLAMES",
-    abbrev: "AFM",
+    abbreviation: "AFM",
     nicknames: [],
     colors: ["#C52032", "#C2912C", "#FFF"],
     logo:
@@ -405,7 +405,7 @@ export default [
   {
     id: 31,
     name: "MINNESOTA NORTH STARS",
-    abbrev: "MNS",
+    abbreviation: "MNS",
     nicknames: [],
     colors: ["#009639", "#FFD100", "#000", "#FFF"],
     logo:
@@ -414,7 +414,7 @@ export default [
   {
     id: 32,
     name: "QUEBEC NORDIQUES",
-    abbrev: "QUE",
+    abbreviation: "QUE",
     nicknames: [],
     colors: ["#005EBB", "#DA291C", "#FFF"],
     logo:
@@ -423,7 +423,7 @@ export default [
   {
     id: 37,
     name: "HAMILTON TIGERS",
-    abbrev: "HAM",
+    abbreviation: "HAM",
     nicknames: [],
     colors: ["#000", "#FFC727", "#FFF"],
     logo:
@@ -432,7 +432,7 @@ export default [
   {
     id: 41,
     name: "MONTREAL WANDERERS",
-    abbrev: "MWN",
+    abbreviation: "MWN",
     nicknames: [],
     colors: ["#FFF", "#E4002B"],
     logo:
@@ -441,7 +441,7 @@ export default [
   {
     id: 42,
     name: "QUEBEC BULLDOGS",
-    abbrev: "QBD",
+    abbreviation: "QBD",
     nicknames: [],
     colors: ["#3E5EFF", "#FFF"],
     logo:
@@ -450,7 +450,7 @@ export default [
   {
     id: 57,
     name: "TORONTO ARENAS",
-    abbrev: "TAN",
+    abbreviation: "TAN",
     nicknames: [],
     colors: ["#003087"],
     logo:
@@ -459,7 +459,7 @@ export default [
   {
     id: 39,
     name: "PHILADELPHIA QUAKERS",
-    abbrev: "QUA",
+    abbreviation: "QUA",
     nicknames: [],
     colors: ["#000", "#F87A36", "#FFF"],
     logo:
@@ -468,7 +468,7 @@ export default [
   {
     id: 48,
     name: "KANSAS CITY SCOUTS",
-    abbrev: "KCS",
+    abbreviation: "KCS",
     nicknames: [],
     colors: ["#003087", "#C8102e", "#FFC72C", "#FFF"],
     logo:
@@ -477,7 +477,7 @@ export default [
   {
     id: 45,
     name: "ST. LOUIS EAGLES",
-    abbrev: "SLE",
+    abbreviation: "SLE",
     nicknames: [],
     colors: ["#C60C30", "#FFF"],
     logo:
@@ -486,7 +486,7 @@ export default [
   {
     id: 43,
     name: "MONTREAL MAROONS",
-    abbrev: "MMR",
+    abbreviation: "MMR",
     nicknames: [],
     colors: ["#FFF", "#6F263D"],
     logo:
@@ -495,7 +495,7 @@ export default [
   {
     id: 50,
     name: "DETROIT FALCONS",
-    abbrev: "DFL",
+    abbreviation: "DFL",
     nicknames: [],
     colors: ["#CE1126", "#FFF"],
     logo: ""

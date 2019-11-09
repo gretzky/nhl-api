@@ -4,7 +4,7 @@ const mockTeams = [
   {
     id: 10,
     name: "TORONTO MAPLE LEAFS",
-    abbrev: "TOR",
+    abbreviation: "TOR",
     nicknames: ["LEAFS", "CRY BABIES"],
     colors: ["#00205B", "#FFF"],
     logo:
@@ -13,7 +13,7 @@ const mockTeams = [
   {
     id: 58,
     name: "TORONTO ST. PATRICKS",
-    abbrev: "TSP",
+    abbreviation: "TSP",
     nicknames: [],
     colors: ["#046A38", "#FFF"],
     logo:
@@ -22,7 +22,7 @@ const mockTeams = [
   {
     id: 57,
     name: "TORONTO ARENAS",
-    abbrev: "TAN",
+    abbreviation: "TAN",
     nicknames: [],
     colors: ["#003087"],
     logo:

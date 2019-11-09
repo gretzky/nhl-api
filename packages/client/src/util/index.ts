@@ -16,7 +16,7 @@ export interface Options {
   date?: string;
 }
 
-const api = axios.create({
+export const api = axios.create({
   baseURL: "https://statsapi.web.nhl.com/api/v1"
 });
 
@@ -24,7 +24,7 @@ export const throwError = (fn: string, msg?: string, err?: Error): void => {
   throw new Error(`[NHL API]: ${fn}(): ${msg ? msg : err}`);
 };
 
-const getId = (resource: any, name: string): number | any[] => {
+export const getId = (resource: any, name: string): number | any[] => {
   const data = resource.filter(
     res =>
       res.name.includes(name.toUpperCase()) ||
@@ -53,7 +53,7 @@ const parseData = (res: string): any => {
   return res;
 };
 
-const handleUrl = (res: string, options?: Options): string => {
+export const handleUrl = (res: string, options?: Options): string => {
   if ((options && options.id) || (options && options.name)) {
     return `/${res}/${
       options.name
@@ -64,7 +64,7 @@ const handleUrl = (res: string, options?: Options): string => {
   return `/${res}`;
 };
 
-const handleData = (res: string, data: any): any => {
+export const handleData = (res: string, data: any): any => {
   if (data.roster) {
     return parseData(data.roster);
   } else if (data.stats) {
@@ -85,54 +85,15 @@ const handleData = (res: string, data: any): any => {
   }
 };
 
-export async function get(res: string, options?: Options): Promise<void> {
-  const getUrl = () => {
-    let url;
-    const baseUrl = handleUrl(res, options);
-
-    if (options && options.expand && options.expand.includes("roster")) {
-      url = `${baseUrl}/roster`;
-    } else if (
-      (options && options.expand && options.expand.includes("stats")) ||
-      (options && options.stats)
-    ) {
-      url = `${baseUrl}/stats`;
-    } else if (
-      (options && options.type && options.type.includes("feed")) ||
-      (options && options.type && options.type.includes("live"))
-    ) {
-      url = `${baseUrl}/feed/live`;
-    } else if (options && options.type && options.type === "boxscore") {
-      url = `${baseUrl}/boxscore`;
-    } else if (options && options.type && options.type === "linescore") {
-      url = `${baseUrl}/linescore`;
-    } else if (options && options.type && options.type === "content") {
-      url = `${baseUrl}/content`;
-    } else if (options && options.year) {
-      url = `${baseUrl}/${options.year}`;
-    } else {
-      url = baseUrl;
-    }
-    return url;
-  };
-
-  if (options) {
-    if (res === "teams" || res === "schedule" || res === "standings") {
-      options.expand =
-        res === "teams" ? `team.${options.expand}` : `${res}.${options.expand}`;
-    }
-    if (res === "schedule" && options.team) {
-      if (typeof options.team === "string") {
-        options.team = getId(teams, options.team);
-      }
-      delete Object.assign(options, { ["teamId"]: options["team"] })["team"];
-    }
-  }
-
+export async function get(
+  res: string,
+  url: string,
+  options?: Options
+): Promise<void> {
   try {
     const response = await api
       .get(
-        getUrl(),
+        url,
         options
           ? {
               params: {

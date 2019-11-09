@@ -3,7 +3,7 @@ import teams from "./teams";
 interface Team {
   id: number;
   name: string;
-  abbrev: string;
+  abbreviation: string;
   nicknames: string[];
   colors: string[];
 }

@@ -12,7 +12,7 @@ yarn add @nhl-api/teams
 
 - **`id`**: (number) a unique number which you can use to to find more team info with the [NHL API](https://statsapi.web.nhl.com/api/v1).
 - **`name`**: full name (location, name) of the team
-- **`abbrev`**: team abbreviation code
+- **`abbreviation`**: team abbreviation code
 - **`nicknames`**: any well-known nicknames the team has
 - **`colors`**: color scheme of each team (includes retired or alternate jersey colors)
 

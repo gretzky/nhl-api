@@ -5,9 +5,21 @@ test("gets all teams", async () => {
   expect(t).toHaveLength(31);
 });
 
+test("gets a custom team property", async () => {
+  const t = await getTeams();
+  expect(t).toContainEqual(
+    expect.objectContaining({ colors: expect.anything() })
+  );
+});
+
 test("gets an individual team", async () => {
   const t = await getTeams({ id: 6 });
   expect(t).toHaveProperty("teamName", "Bruins");
+});
+
+test("gets a custom team property for an individual team", async () => {
+  const t = await getTeams({ id: 6 });
+  expect(t).toHaveProperty("colors");
 });
 
 test("gets a team roster", async () => {
