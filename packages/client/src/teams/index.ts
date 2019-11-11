@@ -61,13 +61,4 @@ export default async function getTeams(options?: Options): Promise<any> {
   } catch (err) {
     return throwError("getTeams", err);
   }
-
-  // try {
-  //   const response = await get("teams", url, options).then((res: any) => {
-  //     res.map((r, i) => Object.assign({}, r, formattedTeams[i]));
-  //   });
-  //   return Promise.resolve(response);
-  // } catch (err) {
-  //   return throwError("getTeams", err);
-  // }
 }
