@@ -6,7 +6,11 @@ export default [
     nicknames: ["DEVS"],
     colors: ["#F47A38", "#B9975C", "#C1C6C8", "#000"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/New_Jersey_Devils_logo.svg/594px-New_Jersey_Devils_logo.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/New_Jersey_Devils_logo.svg/594px-New_Jersey_Devils_logo.svg.png",
+    goalHorn:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/njd.m4a",
+    goalHornSong:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/njd.mp3"
   },
   {
     id: 2,
@@ -15,7 +19,11 @@ export default [
     nicknames: ["ISLES", "FISHSTICKS", "FISH STICKS"],
     colors: ["#00539B", "#F47D30"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/4/42/Logo_New_York_Islanders.svg/440px-Logo_New_York_Islanders.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/4/42/Logo_New_York_Islanders.svg/440px-Logo_New_York_Islanders.svg.png",
+    goalHorn:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/nyi.m4a",
+    goalHornSong:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/nyi.mp3"
   },
   {
     id: 3,
@@ -24,7 +32,11 @@ export default [
     nicknames: ["BLUESHIRTS", "RAGS"],
     colors: ["#0038A8", "#C31126", "#FFF"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/New_York_Rangers.svg/440px-New_York_Rangers.svg.png"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/New_York_Rangers.svg/440px-New_York_Rangers.svg.png",
+    goalHorn:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/nyr.m4a",
+    goalHornSong:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/nyr.mp3"
   },
   {
     id: 4,
@@ -33,7 +45,11 @@ export default [
     nicknames: ["BROAD ST. BULLIES"],
     colors: ["#F74902", "#000", "#FFF"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/d/dc/Philadelphia_Flyers.svg/440px-Philadelphia_Flyers.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/d/dc/Philadelphia_Flyers.svg/440px-Philadelphia_Flyers.svg.png",
+    goalHorn:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/phi.m4a",
+    goalHornSong:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/phi.mp3"
   },
   {
     id: 5,
@@ -42,7 +58,11 @@ export default [
     nicknames: ["SHITTSBURGH", "PENS"],
     colors: ["#000", "#CFC493", "#FCB514", "#FFF"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/c/c0/Pittsburgh_Penguins_logo_%282016%29.svg/440px-Pittsburgh_Penguins_logo_%282016%29.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/c/c0/Pittsburgh_Penguins_logo_%282016%29.svg/440px-Pittsburgh_Penguins_logo_%282016%29.svg.png",
+    goalHorn:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/pit.m4a",
+    goalHornSong:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/pit.mp3"
   },
   {
     id: 6,
@@ -51,7 +71,11 @@ export default [
     nicknames: ["B'S", "BIG BAD BRUINS", "BLACK AND GOLD"],
     colors: ["#000", "#FFB81C"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Boston_Bruins.svg/440px-Boston_Bruins.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Boston_Bruins.svg/440px-Boston_Bruins.svg.png",
+    goalHorn:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/bos.m4a",
+    goalHornSong:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/bos.mp3"
   },
   {
     id: 7,
@@ -60,7 +84,11 @@ export default [
     nicknames: ["SWORDS", "SLUGS"],
     colors: ["#002654", "#FCB514", "#ADAFAA", "#C8102E"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Buffalo_Sabres_Logo.svg/440px-Buffalo_Sabres_Logo.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Buffalo_Sabres_Logo.svg/440px-Buffalo_Sabres_Logo.svg.png",
+    goalHorn:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/buf.m4a",
+    goalHornSong:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/buf.mp3"
   },
   {
     id: 8,
@@ -69,7 +97,11 @@ export default [
     nicknames: ["HABS", "HABITANTS", "BLEU-BLANC-ROUGE", "TOILET BOWLS"],
     colors: ["#AF1E2D", "#192168"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Montreal_Canadiens.svg/440px-Montreal_Canadiens.svg.png"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Montreal_Canadiens.svg/440px-Montreal_Canadiens.svg.png",
+    goalHorn:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/mtl.m4a",
+    goalHornSong:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/mtl.mp3"
   },
   {
     id: 9,
@@ -78,7 +110,11 @@ export default [
     nicknames: ["SENS"],
     colors: ["#C52032", "#C2912C", "#000", "#FFF"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/d/db/Ottawa_Senators.svg/440px-Ottawa_Senators.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/d/db/Ottawa_Senators.svg/440px-Ottawa_Senators.svg.png",
+    goalHorn:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/ott.m4a",
+    goalHornSong:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/ott.mp3"
   },
   {
     id: 10,
@@ -87,7 +123,11 @@ export default [
     nicknames: ["LEAFS", "CRY BABIES"],
     colors: ["#00205B", "#FFF"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/b/b6/Toronto_Maple_Leafs_2016_logo.svg/440px-Toronto_Maple_Leafs_2016_logo.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/b/b6/Toronto_Maple_Leafs_2016_logo.svg/440px-Toronto_Maple_Leafs_2016_logo.svg.png",
+    goalHorn:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/tor.m4a",
+    goalHornSong:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/tor.mp3"
   },
   {
     id: 11,
@@ -96,7 +136,11 @@ export default [
     nicknames: ["THRASH"],
     colors: ["#041E42", "#5C88DA", "#862633", "#B76125", "#FFA300", "#FFF"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Atlanta_Thrashers.svg/440px-Atlanta_Thrashers.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Atlanta_Thrashers.svg/440px-Atlanta_Thrashers.svg.png",
+    goalHorn:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/ana.m4a",
+    goalHornSong:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/ana.m4a"
   },
   {
     id: 12,
@@ -105,7 +149,11 @@ export default [
     nicknames: ["CANES", "JERKS"],
     colors: ["#CC0000", "#000", "#A2AAAD", "#76232F"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/3/32/Carolina_Hurricanes.svg/440px-Carolina_Hurricanes.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/3/32/Carolina_Hurricanes.svg/440px-Carolina_Hurricanes.svg.png",
+    goalHorn:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/car.m4a",
+    goalHornSong:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/car.mp3"
   },
   {
     id: 13,
@@ -114,7 +162,11 @@ export default [
     nicknames: ["CATS"],
     colors: ["#041E42", "#C8102E", "#B9975B"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Florida_Panthers_2016_logo.svg/440px-Florida_Panthers_2016_logo.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Florida_Panthers_2016_logo.svg/440px-Florida_Panthers_2016_logo.svg.png",
+    goalHorn:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/fla.m4a",
+    goalHornSong:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/fla.mp3"
   },
   {
     id: 14,
@@ -123,7 +175,11 @@ export default [
     nicknames: ["BOLTS"],
     colors: ["#002868", "#FFF"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Tampa_Bay_Lightning_Logo_2011.svg/440px-Tampa_Bay_Lightning_Logo_2011.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Tampa_Bay_Lightning_Logo_2011.svg/440px-Tampa_Bay_Lightning_Logo_2011.svg.png",
+    goalHorn:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/tbl.m4a",
+    goalHornSong:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/tbl.mp3"
   },
   {
     id: 15,
@@ -132,7 +188,11 @@ export default [
     nicknames: ["CAPS", "SECOND ROUND EXIT"],
     colors: ["#041E42", "#C8102E", "#FFF"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/2/2d/Washington_Capitals.svg/440px-Washington_Capitals.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/2/2d/Washington_Capitals.svg/440px-Washington_Capitals.svg.png",
+    goalHorn:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/wsh.m4a",
+    goalHornSong:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/wsh.mp3"
   },
   {
     id: 16,
@@ -150,7 +210,11 @@ export default [
       "#FFF"
     ],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/2/29/Chicago_Blackhawks_logo.svg/440px-Chicago_Blackhawks_logo.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/2/29/Chicago_Blackhawks_logo.svg/440px-Chicago_Blackhawks_logo.svg.png",
+    goalHorn:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/chi.m4a",
+    goalHornSong:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/chi.mp3"
   },
   {
     id: 17,
@@ -159,7 +223,11 @@ export default [
     nicknames: ["DEAD WINGS", "WINGS"],
     colors: ["#CE1126", "#FFF"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Detroit_Red_Wings_logo.svg/440px-Detroit_Red_Wings_logo.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Detroit_Red_Wings_logo.svg/440px-Detroit_Red_Wings_logo.svg.png",
+    goalHorn:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/det.m4a",
+    goalHornSong:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/det.mp3"
   },
   {
     id: 18,
@@ -168,7 +236,11 @@ export default [
     nicknames: ["PREDS", "SMASHVILLE"],
     colors: ["#FFB81C", "#041E42", "#FFF"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/Nashville_Predators_Logo_%282011%29.svg/440px-Nashville_Predators_Logo_%282011%29.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/Nashville_Predators_Logo_%282011%29.svg/440px-Nashville_Predators_Logo_%282011%29.svg.png",
+    goalHorn:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/nsh.m4a",
+    goalHornSong:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/nsh.mp3"
   },
   {
     id: 19,
@@ -177,7 +249,11 @@ export default [
     nicknames: ["NOTES", "THE NOTES"],
     colors: ["#002F87", "#FCB514", "#041E42", "#FFF"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/St._Louis_Blues_logo.svg/440px-St._Louis_Blues_logo.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/St._Louis_Blues_logo.svg/440px-St._Louis_Blues_logo.svg.png",
+    goalHorn:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/stl.m4a",
+    goalHornSong:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/stl.mp3"
   },
   {
     id: 20,
@@ -186,7 +262,11 @@ export default [
     nicknames: ["FLAMING SNOT DONKEYS", "FLAMING C'S"],
     colors: ["#C8102E", "#F1BE48", "#111", "#FFF"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/6/60/Calgary_Flames_Logo.svg/440px-Calgary_Flames_Logo.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/6/60/Calgary_Flames_Logo.svg/440px-Calgary_Flames_Logo.svg.png",
+    goalHorn:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/cgy.m4a",
+    goalHornSong:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/cgy.mp3"
   },
   {
     id: 21,
@@ -195,7 +275,11 @@ export default [
     nicknames: ["AVS"],
     colors: ["#6F263D", "#236192", "#A2AAAD", "#000"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/4/45/Colorado_Avalanche_logo.svg/440px-Colorado_Avalanche_logo.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/4/45/Colorado_Avalanche_logo.svg/440px-Colorado_Avalanche_logo.svg.png",
+    goalHorn:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/col.m4a",
+    goalHornSong:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/col.mp3"
   },
   {
     id: 22,
@@ -204,7 +288,11 @@ export default [
     nicknames: ["SPOILERS"],
     colors: ["#041E42", "#FF4C00"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/Logo_Edmonton_Oilers.svg/440px-Logo_Edmonton_Oilers.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/Logo_Edmonton_Oilers.svg/440px-Logo_Edmonton_Oilers.svg.png",
+    goalHorn:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/edm.m4a",
+    goalHornSong:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/edm.mp3"
   },
   {
     id: 23,
@@ -213,7 +301,11 @@ export default [
     nicknames: ["NUCKS", "CANUCKLEHEADS"],
     colors: ["#00205B", "#00843D", "#041C2C", "#99999A", "#FFF"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Vancouver_Canucks_logo.svg/440px-Vancouver_Canucks_logo.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Vancouver_Canucks_logo.svg/440px-Vancouver_Canucks_logo.svg.png",
+    goalHorn:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/van.m4a",
+    goalHornSong:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/van.mp3"
   },
   {
     id: 24,
@@ -231,7 +323,11 @@ export default [
       "#241E34"
     ],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/7/72/Anaheim_Ducks.svg/440px-Anaheim_Ducks.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/7/72/Anaheim_Ducks.svg/440px-Anaheim_Ducks.svg.png",
+    goalHorn:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/ana.m4a",
+    goalHornSong:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/ana.mp3"
   },
   {
     id: 25,
@@ -240,7 +336,11 @@ export default [
     nicknames: ["SHERIFFS"],
     colors: ["#006847", "#8F8F8C", "#111"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/c/ce/Dallas_Stars_logo_%282013%29.svg/440px-Dallas_Stars_logo_%282013%29.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/c/ce/Dallas_Stars_logo_%282013%29.svg/440px-Dallas_Stars_logo_%282013%29.svg.png",
+    goalHorn:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/dal.m4a",
+    goalHornSong:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/dal.mp3"
   },
   {
     id: 26,
@@ -249,7 +349,11 @@ export default [
     nicknames: ["MONARCHS"],
     colors: ["#111", "#A2AAAD", "#FFF", "#572A84", "#FFC80C"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Los_Angeles_Kings_logo.svg/440px-Los_Angeles_Kings_logo.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Los_Angeles_Kings_logo.svg/440px-Los_Angeles_Kings_logo.svg.png",
+    goalHorn:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/lak.m4a",
+    goalHornSong:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/lak.mp3"
   },
   {
     id: 53,
@@ -266,7 +370,11 @@ export default [
       "#5F259F"
     ],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/2/27/Arizona_Coyotes.svg/440px-Arizona_Coyotes.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/2/27/Arizona_Coyotes.svg/440px-Arizona_Coyotes.svg.png",
+    goalHorn:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/ari.m4a",
+    goalHornSong:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/ari.mp3"
   },
   {
     id: 28,
@@ -275,7 +383,11 @@ export default [
     nicknames: ["FINS", "TUNA", "TEAM TEAL"],
     colors: ["#006D75", "#000", "#EA7200", "#FFF"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/3/37/SanJoseSharksLogo.svg/440px-SanJoseSharksLogo.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/3/37/SanJoseSharksLogo.svg/440px-SanJoseSharksLogo.svg.png",
+    goalHorn:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/sjs.m4a",
+    goalHornSong:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/sjs.mp3"
   },
   {
     id: 29,
@@ -284,7 +396,11 @@ export default [
     nicknames: ["JACKETS", "CANNONS"],
     colors: ["#002654", "#CE1126", "#A4A9AD"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/Columbus_Blue_Jackets_logo.svg/440px-Columbus_Blue_Jackets_logo.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/Columbus_Blue_Jackets_logo.svg/440px-Columbus_Blue_Jackets_logo.svg.png",
+    goalHorn:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/cbj.m4a",
+    goalHornSong:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/cbj.mp3"
   },
   {
     id: 30,
@@ -293,7 +409,11 @@ export default [
     nicknames: ["MINNY", "MILD", "MANBEARPIGS"],
     colors: ["#A6192E", "#154734", "#EAAA00", "#DDCBA4"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/Minnesota_Wild.svg/440px-Minnesota_Wild.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/Minnesota_Wild.svg/440px-Minnesota_Wild.svg.png",
+    goalHorn:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/min.m4a",
+    goalHornSong:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/min.mp3"
   },
   {
     id: 54,
@@ -302,7 +422,11 @@ export default [
     nicknames: ["GOLDEN MISFITS", "KNIGHTS"],
     colors: ["#B4975A", "#333F42", "#C8102E", "#000", "#FFF"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/a/ac/Vegas_Golden_Knights_logo.svg/440px-Vegas_Golden_Knights_logo.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/ac/Vegas_Golden_Knights_logo.svg/440px-Vegas_Golden_Knights_logo.svg.png",
+    goalHorn:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/vgk.m4a",
+    goalHornSong:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/vgk.mp3"
   },
   {
     id: 52,
@@ -319,7 +443,11 @@ export default [
       "#FFF"
     ],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/9/93/Winnipeg_Jets_Logo_2011.svg/440px-Winnipeg_Jets_Logo_2011.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/9/93/Winnipeg_Jets_Logo_2011.svg/440px-Winnipeg_Jets_Logo_2011.svg.png",
+    goalHorn:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/wpg.m4a",
+    goalHornSong:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/wpg.mp3"
   },
   {
     id: 38,
@@ -328,7 +456,9 @@ export default [
     nicknames: [],
     colors: ["#000", "#FCB932", "#FFF", "#F87A36"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/8/85/Pittsburgh_Pirates_Logo.svg/440px-Pittsburgh_Pirates_Logo.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/8/85/Pittsburgh_Pirates_Logo.svg/440px-Pittsburgh_Pirates_Logo.svg.png",
+    goalHorn: "",
+    goalHornSong: ""
   },
   {
     id: 58,
@@ -337,7 +467,9 @@ export default [
     nicknames: [],
     colors: ["#046A38", "#FFF"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/6/68/Toronto_St._Patricks_logo.svg/440px-Toronto_St._Patricks_logo.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/6/68/Toronto_St._Patricks_logo.svg/440px-Toronto_St._Patricks_logo.svg.png",
+    goalHorn: "",
+    goalHornSong: ""
   },
   {
     id: 49,
@@ -346,7 +478,9 @@ export default [
     nicknames: [],
     colors: ["#C8102E", "#000", "#FFF"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Cleveland_Barons_%28NHL%29_logo.svg/440px-Cleveland_Barons_%28NHL%29_logo.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Cleveland_Barons_%28NHL%29_logo.svg/440px-Cleveland_Barons_%28NHL%29_logo.svg.png",
+    goalHorn: "",
+    goalHornSong: ""
   },
   {
     id: 46,
@@ -355,7 +489,9 @@ export default [
     nicknames: [],
     colors: ["#046A38", "#0033A0", "#FFF", "#FFC72C", "#009CA6"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/1/17/California_Golden_Seals_Logo.svg/440px-California_Golden_Seals_Logo.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/1/17/California_Golden_Seals_Logo.svg/440px-California_Golden_Seals_Logo.svg.png",
+    goalHorn: "",
+    goalHornSong: ""
   },
   {
     id: 44,
@@ -364,7 +500,9 @@ export default [
     nicknames: [],
     colors: ["#0038A8", "#C31126", "#FFF"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/d/da/New_York_Americans_Logo.svg/440px-New_York_Americans_Logo.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/d/da/New_York_Americans_Logo.svg/440px-New_York_Americans_Logo.svg.png",
+    goalHorn: "",
+    goalHornSong: ""
   },
   {
     id: 56,
@@ -373,7 +511,9 @@ export default [
     nicknames: [],
     colors: ["#046A38", "#0033A0", "#FFF", "#FFC72C", "#009CA6"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/1/17/California_Golden_Seals_Logo.svg/440px-California_Golden_Seals_Logo.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/1/17/California_Golden_Seals_Logo.svg/440px-California_Golden_Seals_Logo.svg.png",
+    goalHorn: "",
+    goalHornSong: ""
   },
   {
     id: 34,
@@ -391,7 +531,11 @@ export default [
       "#FFF"
     ],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Hartford_Whalers_Logo-79-92.svg/440px-Hartford_Whalers_Logo-79-92.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Hartford_Whalers_Logo-79-92.svg/440px-Hartford_Whalers_Logo-79-92.svg.png",
+    goalHorn:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/hfd.m4a",
+    goalHornSong:
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/hfd.m4a"
   },
   {
     id: 47,
@@ -400,7 +544,9 @@ export default [
     nicknames: [],
     colors: ["#C52032", "#C2912C", "#FFF"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/4/45/Atlanta_Flames_Logo.svg/440px-Atlanta_Flames_Logo.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/4/45/Atlanta_Flames_Logo.svg/440px-Atlanta_Flames_Logo.svg.png",
+    goalHorn: "",
+    goalHornSong: ""
   },
   {
     id: 31,
@@ -409,7 +555,9 @@ export default [
     nicknames: [],
     colors: ["#009639", "#FFD100", "#000", "#FFF"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Minnesota_North_Stars_Logo_2.svg/440px-Minnesota_North_Stars_Logo_2.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Minnesota_North_Stars_Logo_2.svg/440px-Minnesota_North_Stars_Logo_2.svg.png",
+    goalHorn: "",
+    goalHornSong: ""
   },
   {
     id: 32,
@@ -418,7 +566,9 @@ export default [
     nicknames: [],
     colors: ["#005EBB", "#DA291C", "#FFF"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Quebec_Nordiques_Logo.svg/440px-Quebec_Nordiques_Logo.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Quebec_Nordiques_Logo.svg/440px-Quebec_Nordiques_Logo.svg.png",
+    goalHorn: "",
+    goalHornSong: ""
   },
   {
     id: 37,
@@ -427,7 +577,9 @@ export default [
     nicknames: [],
     colors: ["#000", "#FFC727", "#FFF"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/1/15/Hamilton_Tigers_Logo.svg/440px-Hamilton_Tigers_Logo.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/1/15/Hamilton_Tigers_Logo.svg/440px-Hamilton_Tigers_Logo.svg.png",
+    goalHorn: "",
+    goalHornSong: ""
   },
   {
     id: 41,
@@ -436,7 +588,9 @@ export default [
     nicknames: [],
     colors: ["#FFF", "#E4002B"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/Montreal_Wanderers_logo.svg/440px-Montreal_Wanderers_logo.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/Montreal_Wanderers_logo.svg/440px-Montreal_Wanderers_logo.svg.png",
+    goalHorn: "",
+    goalHornSong: ""
   },
   {
     id: 42,
@@ -445,7 +599,9 @@ export default [
     nicknames: [],
     colors: ["#3E5EFF", "#FFF"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/commons/7/75/QuebecBulldogs.png"
+      "https://upload.wikimedia.org/wikipedia/commons/7/75/QuebecBulldogs.png",
+    goalHorn: "",
+    goalHornSong: ""
   },
   {
     id: 57,
@@ -454,7 +610,9 @@ export default [
     nicknames: [],
     colors: ["#003087"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Toronto_Arenas_Logo.svg/440px-Toronto_Arenas_Logo.svg.png"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Toronto_Arenas_Logo.svg/440px-Toronto_Arenas_Logo.svg.png",
+    goalHorn: "",
+    goalHornSong: ""
   },
   {
     id: 39,
@@ -463,7 +621,9 @@ export default [
     nicknames: [],
     colors: ["#000", "#F87A36", "#FFF"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Logo_Philadelphia_Quakers.svg/440px-Logo_Philadelphia_Quakers.svg.png"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Logo_Philadelphia_Quakers.svg/440px-Logo_Philadelphia_Quakers.svg.png",
+    goalHorn: "",
+    goalHornSong: ""
   },
   {
     id: 48,
@@ -472,7 +632,9 @@ export default [
     nicknames: [],
     colors: ["#003087", "#C8102e", "#FFC72C", "#FFF"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/7/74/Kansas_City_Scouts_logo.svg/440px-Kansas_City_Scouts_logo.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/7/74/Kansas_City_Scouts_logo.svg/440px-Kansas_City_Scouts_logo.svg.png",
+    goalHorn: "",
+    goalHornSong: ""
   },
   {
     id: 45,
@@ -481,7 +643,9 @@ export default [
     nicknames: [],
     colors: ["#C60C30", "#FFF"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/a/ac/St._Louis_Eagles_logo.svg/440px-St._Louis_Eagles_logo.svg.png"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/ac/St._Louis_Eagles_logo.svg/440px-St._Louis_Eagles_logo.svg.png",
+    goalHorn: "",
+    goalHornSong: ""
   },
   {
     id: 43,
@@ -490,14 +654,8 @@ export default [
     nicknames: [],
     colors: ["#FFF", "#6F263D"],
     logo:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Montreal_Maroons_Logo.svg/440px-Montreal_Maroons_Logo.svg.png"
-  },
-  {
-    id: 50,
-    name: "DETROIT FALCONS",
-    abbreviation: "DFL",
-    nicknames: [],
-    colors: ["#CE1126", "#FFF"],
-    logo: ""
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Montreal_Maroons_Logo.svg/440px-Montreal_Maroons_Logo.svg.png",
+    goalHorn: "",
+    goalHornSong: ""
   }
 ];
