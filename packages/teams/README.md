@@ -15,7 +15,7 @@ yarn add @nhl-api/teams
 - **`abbreviation`**: team abbreviation code
 - **`nicknames`**: any well-known nicknames the team has
 - **`colors`**: color scheme of each team (includes retired or alternate jersey colors)
-- **`logo`**: primary team logo
+- **`logo`**: primary team logo (transparent SVG)
 - **`goalHorn`**: team goal horn (no song) between 5-10s
 - **`goalHornSong`**: team goal horn with song (full track)
 
