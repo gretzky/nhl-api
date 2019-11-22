@@ -53,9 +53,8 @@ const kovy = getPlayerMugshot({ name: "ilya kovalchuk", team: "atl", season: "20
 const gretzkyId = getPlayerId("wayne gretzky")
 // or part of the players name
 const gretzkyId = getPlayerId("gretzky")
-// or their nickname
-const gretzkyId = getPlayerId("the great one")
 // all return the players id - 8447400
+// or an array of players if more than 1 player matches a name
 
 // you can then use the id to make api calls to endpoints related to player stats/info
 axios
