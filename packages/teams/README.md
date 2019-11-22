@@ -18,6 +18,7 @@ yarn add @nhl-api/teams
 - **`logo`**: primary team logo (transparent SVG)
 - **`goalHorn`**: team goal horn (no song) between 5-10s
 - **`goalHornSong`**: team goal horn with song (full track)
+- **`isActive**: boolean to filter currently active teams
 
 There's also a helper function available (`getTeamId`) that matches a passed param to either the team's location, name, or nickname and returns the ID.
 

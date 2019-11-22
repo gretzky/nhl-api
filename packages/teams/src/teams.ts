@@ -10,7 +10,8 @@ export default [
     goalHorn:
       "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/njd.m4a",
     goalHornSong:
-      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/njd.mp3"
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/njd.mp3",
+    isActive: true
   },
   {
     id: 2,
@@ -23,7 +24,8 @@ export default [
     goalHorn:
       "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/nyi.m4a",
     goalHornSong:
-      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/nyi.mp3"
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/nyi.mp3",
+    isActive: true
   },
   {
     id: 3,
@@ -36,7 +38,8 @@ export default [
     goalHorn:
       "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/nyr.m4a",
     goalHornSong:
-      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/nyr.mp3"
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/nyr.mp3",
+    isActive: true
   },
   {
     id: 4,
@@ -49,7 +52,8 @@ export default [
     goalHorn:
       "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/phi.m4a",
     goalHornSong:
-      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/phi.mp3"
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/phi.mp3",
+    isActive: true
   },
   {
     id: 5,
@@ -62,7 +66,8 @@ export default [
     goalHorn:
       "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/pit.m4a",
     goalHornSong:
-      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/pit.mp3"
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/pit.mp3",
+    isActive: true
   },
   {
     id: 6,
@@ -75,7 +80,8 @@ export default [
     goalHorn:
       "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/bos.m4a",
     goalHornSong:
-      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/bos.mp3"
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/bos.mp3",
+    isActive: true
   },
   {
     id: 7,
@@ -88,7 +94,8 @@ export default [
     goalHorn:
       "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/buf.m4a",
     goalHornSong:
-      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/buf.mp3"
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/buf.mp3",
+    isActive: true
   },
   {
     id: 8,
@@ -101,7 +108,8 @@ export default [
     goalHorn:
       "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/mtl.m4a",
     goalHornSong:
-      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/mtl.mp3"
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/mtl.mp3",
+    isActive: true
   },
   {
     id: 9,
@@ -114,7 +122,8 @@ export default [
     goalHorn:
       "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/ott.m4a",
     goalHornSong:
-      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/ott.mp3"
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/ott.mp3",
+    isActive: true
   },
   {
     id: 10,
@@ -127,7 +136,8 @@ export default [
     goalHorn:
       "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/tor.m4a",
     goalHornSong:
-      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/tor.mp3"
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/tor.mp3",
+    isActive: true
   },
   {
     id: 11,
@@ -140,7 +150,8 @@ export default [
     goalHorn:
       "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/ana.m4a",
     goalHornSong:
-      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/ana.m4a"
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/ana.m4a",
+    isActive: false
   },
   {
     id: 12,
@@ -153,7 +164,8 @@ export default [
     goalHorn:
       "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/car.m4a",
     goalHornSong:
-      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/car.mp3"
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/car.mp3",
+    isActive: true
   },
   {
     id: 13,
@@ -166,7 +178,8 @@ export default [
     goalHorn:
       "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/fla.m4a",
     goalHornSong:
-      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/fla.mp3"
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/fla.mp3",
+    isActive: true
   },
   {
     id: 14,
@@ -179,7 +192,8 @@ export default [
     goalHorn:
       "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/tbl.m4a",
     goalHornSong:
-      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/tbl.mp3"
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/tbl.mp3",
+    isActive: true
   },
   {
     id: 15,
@@ -192,7 +206,8 @@ export default [
     goalHorn:
       "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/wsh.m4a",
     goalHornSong:
-      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/wsh.mp3"
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/wsh.mp3",
+    isActive: true
   },
   {
     id: 16,
@@ -214,7 +229,8 @@ export default [
     goalHorn:
       "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/chi.m4a",
     goalHornSong:
-      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/chi.mp3"
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/chi.mp3",
+    isActive: true
   },
   {
     id: 17,
@@ -227,7 +243,8 @@ export default [
     goalHorn:
       "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/det.m4a",
     goalHornSong:
-      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/det.mp3"
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/det.mp3",
+    isActive: true
   },
   {
     id: 18,
@@ -240,7 +257,8 @@ export default [
     goalHorn:
       "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/nsh.m4a",
     goalHornSong:
-      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/nsh.mp3"
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/nsh.mp3",
+    isActive: true
   },
   {
     id: 19,
@@ -253,7 +271,8 @@ export default [
     goalHorn:
       "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/stl.m4a",
     goalHornSong:
-      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/stl.mp3"
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/stl.mp3",
+    isActive: true
   },
   {
     id: 20,
@@ -266,7 +285,8 @@ export default [
     goalHorn:
       "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/cgy.m4a",
     goalHornSong:
-      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/cgy.mp3"
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/cgy.mp3",
+    isActive: true
   },
   {
     id: 21,
@@ -279,7 +299,8 @@ export default [
     goalHorn:
       "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/col.m4a",
     goalHornSong:
-      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/col.mp3"
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/col.mp3",
+    isActive: true
   },
   {
     id: 22,
@@ -292,7 +313,8 @@ export default [
     goalHorn:
       "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/edm.m4a",
     goalHornSong:
-      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/edm.mp3"
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/edm.mp3",
+    isActive: true
   },
   {
     id: 23,
@@ -305,7 +327,8 @@ export default [
     goalHorn:
       "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/van.m4a",
     goalHornSong:
-      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/van.mp3"
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/van.mp3",
+    isActive: true
   },
   {
     id: 24,
@@ -327,7 +350,8 @@ export default [
     goalHorn:
       "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/ana.m4a",
     goalHornSong:
-      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/ana.mp3"
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/ana.mp3",
+    isActive: true
   },
   {
     id: 25,
@@ -340,7 +364,8 @@ export default [
     goalHorn:
       "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/dal.m4a",
     goalHornSong:
-      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/dal.mp3"
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/dal.mp3",
+    isActive: true
   },
   {
     id: 26,
@@ -353,7 +378,8 @@ export default [
     goalHorn:
       "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/lak.m4a",
     goalHornSong:
-      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/lak.mp3"
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/lak.mp3",
+    isActive: true
   },
   {
     id: 53,
@@ -374,7 +400,8 @@ export default [
     goalHorn:
       "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/ari.m4a",
     goalHornSong:
-      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/ari.mp3"
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/ari.mp3",
+    isActive: true
   },
   {
     id: 28,
@@ -387,7 +414,8 @@ export default [
     goalHorn:
       "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/sjs.m4a",
     goalHornSong:
-      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/sjs.mp3"
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/sjs.mp3",
+    isActive: true
   },
   {
     id: 29,
@@ -400,7 +428,8 @@ export default [
     goalHorn:
       "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/cbj.m4a",
     goalHornSong:
-      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/cbj.mp3"
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/cbj.mp3",
+    isActive: true
   },
   {
     id: 30,
@@ -413,7 +442,8 @@ export default [
     goalHorn:
       "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/min.m4a",
     goalHornSong:
-      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/min.mp3"
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/min.mp3",
+    isActive: true
   },
   {
     id: 54,
@@ -426,7 +456,8 @@ export default [
     goalHorn:
       "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/vgk.m4a",
     goalHornSong:
-      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/vgk.mp3"
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/vgk.mp3",
+    isActive: true
   },
   {
     id: 52,
@@ -447,7 +478,8 @@ export default [
     goalHorn:
       "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/wpg.m4a",
     goalHornSong:
-      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/wpg.mp3"
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/wpg.mp3",
+    isActive: true
   },
   {
     id: 38,
@@ -458,7 +490,8 @@ export default [
     logo:
       "https://upload.wikimedia.org/wikipedia/en/thumb/8/85/Pittsburgh_Pirates_Logo.svg/440px-Pittsburgh_Pirates_Logo.svg.png",
     goalHorn: "",
-    goalHornSong: ""
+    goalHornSong: "",
+    isActive: false
   },
   {
     id: 58,
@@ -469,7 +502,8 @@ export default [
     logo:
       "https://upload.wikimedia.org/wikipedia/en/thumb/6/68/Toronto_St._Patricks_logo.svg/440px-Toronto_St._Patricks_logo.svg.png",
     goalHorn: "",
-    goalHornSong: ""
+    goalHornSong: "",
+    isActive: false
   },
   {
     id: 49,
@@ -480,7 +514,8 @@ export default [
     logo:
       "https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Cleveland_Barons_%28NHL%29_logo.svg/440px-Cleveland_Barons_%28NHL%29_logo.svg.png",
     goalHorn: "",
-    goalHornSong: ""
+    goalHornSong: "",
+    isActive: false
   },
   {
     id: 46,
@@ -491,7 +526,8 @@ export default [
     logo:
       "https://upload.wikimedia.org/wikipedia/en/thumb/1/17/California_Golden_Seals_Logo.svg/440px-California_Golden_Seals_Logo.svg.png",
     goalHorn: "",
-    goalHornSong: ""
+    goalHornSong: "",
+    isActive: false
   },
   {
     id: 44,
@@ -502,7 +538,8 @@ export default [
     logo:
       "https://upload.wikimedia.org/wikipedia/en/thumb/d/da/New_York_Americans_Logo.svg/440px-New_York_Americans_Logo.svg.png",
     goalHorn: "",
-    goalHornSong: ""
+    goalHornSong: "",
+    isActive: false
   },
   {
     id: 56,
@@ -513,7 +550,8 @@ export default [
     logo:
       "https://upload.wikimedia.org/wikipedia/en/thumb/1/17/California_Golden_Seals_Logo.svg/440px-California_Golden_Seals_Logo.svg.png",
     goalHorn: "",
-    goalHornSong: ""
+    goalHornSong: "",
+    isActive: false
   },
   {
     id: 34,
@@ -535,7 +573,8 @@ export default [
     goalHorn:
       "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/horns/hfd.m4a",
     goalHornSong:
-      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/hfd.m4a"
+      "https://github.com/gretzky/nhl-api/blob/master/packages/teams/src/assets/songs/hfd.m4a",
+    isActive: false
   },
   {
     id: 47,
@@ -546,7 +585,8 @@ export default [
     logo:
       "https://upload.wikimedia.org/wikipedia/en/thumb/4/45/Atlanta_Flames_Logo.svg/440px-Atlanta_Flames_Logo.svg.png",
     goalHorn: "",
-    goalHornSong: ""
+    goalHornSong: "",
+    isActive: false
   },
   {
     id: 31,
@@ -557,7 +597,8 @@ export default [
     logo:
       "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Minnesota_North_Stars_Logo_2.svg/440px-Minnesota_North_Stars_Logo_2.svg.png",
     goalHorn: "",
-    goalHornSong: ""
+    goalHornSong: "",
+    isActive: false
   },
   {
     id: 32,
@@ -568,7 +609,8 @@ export default [
     logo:
       "https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Quebec_Nordiques_Logo.svg/440px-Quebec_Nordiques_Logo.svg.png",
     goalHorn: "",
-    goalHornSong: ""
+    goalHornSong: "",
+    isActive: false
   },
   {
     id: 37,
@@ -579,7 +621,8 @@ export default [
     logo:
       "https://upload.wikimedia.org/wikipedia/en/thumb/1/15/Hamilton_Tigers_Logo.svg/440px-Hamilton_Tigers_Logo.svg.png",
     goalHorn: "",
-    goalHornSong: ""
+    goalHornSong: "",
+    isActive: false
   },
   {
     id: 41,
@@ -590,7 +633,8 @@ export default [
     logo:
       "https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/Montreal_Wanderers_logo.svg/440px-Montreal_Wanderers_logo.svg.png",
     goalHorn: "",
-    goalHornSong: ""
+    goalHornSong: "",
+    isActive: false
   },
   {
     id: 42,
@@ -601,7 +645,8 @@ export default [
     logo:
       "https://upload.wikimedia.org/wikipedia/commons/7/75/QuebecBulldogs.png",
     goalHorn: "",
-    goalHornSong: ""
+    goalHornSong: "",
+    isActive: false
   },
   {
     id: 57,
@@ -612,7 +657,8 @@ export default [
     logo:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Toronto_Arenas_Logo.svg/440px-Toronto_Arenas_Logo.svg.png",
     goalHorn: "",
-    goalHornSong: ""
+    goalHornSong: "",
+    isActive: false
   },
   {
     id: 39,
@@ -623,7 +669,8 @@ export default [
     logo:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Logo_Philadelphia_Quakers.svg/440px-Logo_Philadelphia_Quakers.svg.png",
     goalHorn: "",
-    goalHornSong: ""
+    goalHornSong: "",
+    isActive: false
   },
   {
     id: 48,
@@ -634,7 +681,8 @@ export default [
     logo:
       "https://upload.wikimedia.org/wikipedia/en/thumb/7/74/Kansas_City_Scouts_logo.svg/440px-Kansas_City_Scouts_logo.svg.png",
     goalHorn: "",
-    goalHornSong: ""
+    goalHornSong: "",
+    isActive: false
   },
   {
     id: 45,
@@ -645,7 +693,8 @@ export default [
     logo:
       "https://upload.wikimedia.org/wikipedia/en/thumb/a/ac/St._Louis_Eagles_logo.svg/440px-St._Louis_Eagles_logo.svg.png",
     goalHorn: "",
-    goalHornSong: ""
+    goalHornSong: "",
+    isActive: false
   },
   {
     id: 43,
@@ -656,6 +705,7 @@ export default [
     logo:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Montreal_Maroons_Logo.svg/440px-Montreal_Maroons_Logo.svg.png",
     goalHorn: "",
-    goalHornSong: ""
+    goalHornSong: "",
+    isActive: false
   }
 ];

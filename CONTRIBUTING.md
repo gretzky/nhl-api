@@ -20,3 +20,6 @@ If you want to make a significant change, please open a feature request first.
 
 **IMPORTANT:** By submitting any code fixes/features, you agree to allow the project owners to license your work under the terms of the [MIT License](./LICENSE).
 
+## Code of Conduct
+
+Hockey is for everyone.

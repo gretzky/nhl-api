@@ -3,17 +3,17 @@ import players from "./players";
 interface Player {
   id: number;
   name: string;
-  nicknames: string[];
 }
+
+const getPlayerById = (id: number | string) =>
+  players.filter(player => player.id === id)[0];
 
 // search for a player's id based on a given string
 // adding `toUpperCase` makes the search case insensitive
 const getPlayerId = (name: string): number | Player[] => {
   const p = players.filter(
     player =>
-      player.name.includes(name.toUpperCase()) ||
-      // match the exact nickname here instead of grabbing parts of a nickname to narrow down the search as much as we can
-      player.nicknames.some(nickname => nickname === name.toUpperCase())
+      player.name.toUpperCase().includes(name.toUpperCase())
   );
   if (p.length > 1) {
     // if the query matches more than 1 player, return the array of players
@@ -50,5 +50,5 @@ const getPlayerMugshot = (options: Options): string => {
   }.png`;
 };
 
-export { getPlayerId, getPlayerMugshot };
+export { getPlayerById, getPlayerId, getPlayerMugshot };
 export default players;
