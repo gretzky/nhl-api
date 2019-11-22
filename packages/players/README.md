@@ -1,6 +1,6 @@
 # @nhl-api/players
 
-A list of every NHL player to ever step on the ice*
+A list of all 16,892 NHL players to ever step on the ice*
 
 <sup>*Probably. Some may be missing or duplicated. YMMV.</sup>
 
@@ -15,13 +15,11 @@ yarn add @nhl-api/players
 The main entree of this package. An array of objects containing 3 key/value pairs:
 
 - **`id`**: (number) a unique number which you can use to to find more player info with the [NHL API](https://statsapi.web.nhl.com/api/v1).
-- **`fullName`**: the player's first and last name
-  - this means the players real first name is used (i.e. Irvine Bailey rather than Ace Bailey)
-  - players with first names that are commonly shortened are kept shortened if that was their roster name (i.e. Andy Brickley isn't 'Andrew', and on the flipside Donald Brashear isn't 'Don', etc.)
-- **`nicknames`**: nicknames the player has/had ([reference](https://en.wikipedia.org/wiki/List_of_ice_hockey_nicknames)). value is an array of strings
-  - this also includes abbreviations (i.e. P.J. Axelsson)
-  - players that went by a nickname primarily (i.e. Ace Bailey) have a nickname entry that contains their nickname and last name, so that they can easily be searched
-  - this is an empty array if player has no nicknames
+- **`name`**: the player's first and last name as shown on a roster-- i.e. Ace Bailey (not Irving Bailey), Zach Aston-Reese (not Zachary), etc.
+
+### `getPlayerById(id)`
+
+Gets a player by their ID.
 
 ### `getPlayerId(name)`
 
