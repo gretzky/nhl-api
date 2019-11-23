@@ -1,0 +1,12 @@
+{
+  "extends": "../tsconfig.json",
+  "include": ["src", "types"],
+  "compilerOptions": {
+    "sourceMap": true,
+    "rootDir": "./",
+    "baseUrl": "./",
+    "paths": {
+      "*": ["src/*", "node_modules/*"]
+    }
+  }
+}

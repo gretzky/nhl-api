@@ -1,0 +1,29 @@
+{
+  "files": [],
+  "references": [
+    { "path": "client" },
+    { "path": "players" },
+    { "path": "teams" }
+  ],
+  "compilerOptions": {
+    "target": "es5",
+    "module": "esnext",
+    "lib": ["esnext"],
+    "importHelpers": true,
+    "declaration": true,
+    "composite": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true
+  }
+}

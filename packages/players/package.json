@@ -1,0 +1,17 @@
+{
+  "name": "@nhl-api/players",
+  "version": "2.0.0",
+  "license": "MIT",
+  "author": "gretzky",
+  "main": "dist/index.js",
+  "module": "dist/players.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint"
+  }
+}
