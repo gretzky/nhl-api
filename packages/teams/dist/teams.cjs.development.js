@@ -506,19 +506,12 @@ var teams = [{
 
 var getTeamId = function getTeamId(name) {
   var t = teams.filter(function (team) {
-    return team.name.includes(name.toUpperCase()) || // we don't explicitly match the nickname here because most team nicknames don't overlap and this allows for some wiggle room
+    return team.name.toUpperCase().includes(name.toUpperCase()) || // we don't explicitly match the nickname here because most team nicknames don't overlap and this allows for some wiggle room
     team.nicknames.some(function (nickname) {
-      return nickname.includes(name.toUpperCase());
+      return nickname.toUpperCase().includes(name.toUpperCase());
     });
   });
-
-  if (t.length > 1) {
-    // if the query matches more than 1 team, return the array of players
-    return t;
-  } // team found, return the id
-
-
-  return t[0].id;
+  return t.length > 1 ? t : t[0].id;
 };
 
 exports.default = teams;
