@@ -1,11 +1,12 @@
 {
   "name": "@nhl-api/players",
-  "version": "1.4.3",
+  "version": "1.4.4-2.2.0-alpha.0",
   "license": "MIT",
-  "main": "lib/src/index.js",
-  "types": "lib/src/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/players.esm.js",
+  "typings": "dist/index.d.ts",
   "files": [
-    "lib"
+    "dist"
   ],
   "publishConfig": {
     "access": "public"
@@ -16,8 +17,7 @@
     "url": "https://github.com/gretzky/nhl-api"
   },
   "scripts": {
-    "clean": "rimraf lib",
-    "build": "tsc -b"
+    "build": "tsdx build"
   },
   "gitHead": "f500b6b2fdc732cb44d87cf9f0b10534dae5193a"
 }
