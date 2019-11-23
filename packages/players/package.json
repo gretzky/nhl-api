@@ -1,6 +1,6 @@
 {
   "name": "@nhl-api/players",
-  "version": "1.4.4-2.2.0-alpha.0",
+  "version": "2.2.1-alpha.0",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/players.esm.js",

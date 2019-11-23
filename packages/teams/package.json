@@ -1,6 +1,6 @@
 {
   "name": "@nhl-api/teams",
-  "version": "1.4.4-2.2.0-alpha.0",
+  "version": "2.2.1-alpha.0",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/teams.esm.js",
