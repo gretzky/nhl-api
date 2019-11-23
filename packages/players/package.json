@@ -1,6 +1,6 @@
 {
   "name": "@nhl-api/players",
-  "version": "2.0.0",
+  "version": "2.0.0-alpha",
   "license": "MIT",
   "author": "gretzky",
   "main": "dist/index.js",

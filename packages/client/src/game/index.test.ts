@@ -6,7 +6,6 @@ test('gets a game feed', async () => {
     'gameData',
     expect.objectContaining({ game: expect.anything() })
   );
-  expect(t).toHaveProperty('metaData', expect.objectContaining({ wait: 10 }));
   expect(t).toHaveProperty(
     'liveData',
     expect.objectContaining({ plays: expect.anything() })

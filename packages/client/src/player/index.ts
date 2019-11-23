@@ -41,15 +41,12 @@ export default async function getPlayer(options: PlayerOptions): Promise<void> {
   const url: string = options.stats ? `${baseUrl()}/stats` : baseUrl();
 
   const handleData = (data: any) => {
-    if (options.stats) {
+    if (data.stats) {
       if (data.stats.length > 1) {
-        // if we have more than 1 stat objects, return those
         return data.stats;
       } else if (data.stats[0].splits.length > 1) {
-        // if we have 1 stat object, but multiple splits, return those
         return data.stats[0].splits;
       }
-      // otherwise, return the single split object in the single stat array
       return data.stats[0].splits[0];
     }
     return data.people[0];

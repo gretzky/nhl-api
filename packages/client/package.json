@@ -1,6 +1,6 @@
 {
   "name": "@nhl-api/client",
-  "version": "2.0.0",
+  "version": "2.0.0-alpha",
   "license": "MIT",
   "author": "gretzky",
   "main": "dist/index.js",
@@ -15,7 +15,7 @@
     "lint": "tsdx lint"
   },
   "devDependencies": {
-    "@nhl-api/players": "^2.0.0",
-    "@nhl-api/teams": "^2.0.0"
+    "@nhl-api/players": "^2.0.0-alpha",
+    "@nhl-api/teams": "^2.0.0-alpha"
   }
 }

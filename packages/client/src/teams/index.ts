@@ -1,36 +1,37 @@
 import teams from '@nhl-api/teams';
-import { throwError, get, RequireAtLeastOne } from '../util';
-interface Options {
+import { throwError, get } from '../util';
+interface TeamOptions {
   id?: string | number;
   name?: string;
   expand?: string;
   season?: string | number;
 }
 
-type TeamOptions = RequireAtLeastOne<Options, 'id' | 'name'>;
-
-export default async function getTeams(options: TeamOptions): Promise<any> {
-  if (options.season && options.season.toString().length !== 8) {
+export default async function getTeams(options?: TeamOptions): Promise<any> {
+  if (options && options.season && options.season.toString().length !== 8) {
     throwError(
       'getTeams',
       `Season must be formatted as both full years, i.e. '20192020'.`
     );
   }
 
-  const id = options.name
-    ? teams.filter((team: any) => team.name === options.name)[0].id
-    : options.id;
+  const id =
+    options && options.name
+      ? teams.filter((team: any) => team.name === options.name)[0].id
+      : options && options.id;
   const baseUrl: string =
-    options.id || options.name ? `/teams/${id}` : `/teams`;
+    (options && options.id) || (options && options.name)
+      ? `/teams/${id}`
+      : `/teams`;
 
   const url: string =
-    options.expand && options.expand.includes('roster')
+    options && options.expand && options.expand.includes('roster')
       ? `${baseUrl}/roster`
-      : options.expand && options.expand.includes('stats')
+      : options && options.expand && options.expand.includes('stats')
       ? `${baseUrl}/stats`
       : baseUrl;
 
-  if (options.expand) {
+  if (options && options.expand) {
     options.expand = `team.${options.expand}`;
   }
 
@@ -42,17 +43,21 @@ export default async function getTeams(options: TeamOptions): Promise<any> {
         return data.roster;
       }
       if (data.stats) {
-        return data.stats;
+        return data.stats.length > 1 ? data.stats : data.stats[0];
       }
-      if (Array.isArray(data) && data.some(d => d.abbreviation)) {
-        // if we've fetched all teams, merge the payload with the team objects from @nhl-api/teams to include other assets (logos, goal horns, etc.)
-        return data.map((d, i) => Object.assign({}, d, activeTeams[i]));
-      } else if (data.hasOwnProperty('abbreviation')) {
-        // do the same as above but for an individual team
+      if (
+        data.teams.length > 1 &&
+        data.teams.some((d: any) => d.abbreviation)
+      ) {
+        return data.teams.map((d: any, i: number) =>
+          Object.assign({}, d, activeTeams[i])
+        );
+      }
+      if (data.teams[0].hasOwnProperty('abbreviation')) {
         return Object.assign(
           {},
-          data,
-          activeTeams.find((team: any) => team.id === data.id)
+          data.teams[0],
+          activeTeams.find((team: any) => team.id === data.teams[0].id)
         );
       }
       return data;

@@ -24,7 +24,7 @@ const mockTeams = [
     logo:
       'https://upload.wikimedia.org/wikipedia/en/thumb/6/68/Toronto_St._Patricks_logo.svg/440px-Toronto_St._Patricks_logo.svg.png',
     goalHorn: '',
-    goalSong: '',
+    goalHornSong: '',
     isActive: false,
   },
   {
@@ -36,7 +36,7 @@ const mockTeams = [
     logo:
       'https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Toronto_Arenas_Logo.svg/440px-Toronto_Arenas_Logo.svg.png',
     goalHorn: '',
-    goalSong: '',
+    goalHornSong: '',
     isActive: false,
   },
 ];
