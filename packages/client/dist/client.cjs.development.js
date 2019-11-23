@@ -50,12 +50,18 @@ function _extends() {
   return _extends.apply(this, arguments);
 }
 
-var get = function get(url, options) {
+var get = function get(url, res, options) {
   return Promise.resolve(_catch(function () {
     return Promise.resolve(api.get(url, options ? {
       params: _extends({}, options)
     } : undefined).then(function (response) {
       return response.data;
+    }).then(function (data) {
+      if (data.hasOwnProperty(res)) {
+        return parseData(data[res]);
+      }
+
+      return data;
     })).then(Promise.resolve);
   }, function (err) {
     return err;
@@ -77,20 +83,23 @@ var handleUrl = function handleUrl(res, options) {
   return "/" + res;
 };
 
+var parseData = function parseData(res) {
+  if (Array.isArray(res) && res.length === 1) {
+    return res[0];
+  }
+
+  return res;
+};
+
 var getAwards = function getAwards(options) {
   try {
     var response;
     var url = handleUrl('awards', options);
     return Promise.resolve(_catch(function () {
-      return Promise.resolve(get(url, options).then(function (data) {
-        if (data.awards.length > 1) {
-          return data.awards;
-        }
-
-        return data.awards[0];
+      return Promise.resolve(get(url, 'awards', options).then(function (res) {
+        return res;
       })).then(function (_get$then) {
         response = _get$then;
-        //const response = await get('awards', baseUrl, options).then(res => res);
         return Promise.resolve(response);
       });
     }, function (err) {
@@ -106,12 +115,8 @@ var getConferences = function getConferences(options) {
     var response;
     var url = handleUrl('conferences', options);
     return Promise.resolve(_catch(function () {
-      return Promise.resolve(get(url, options).then(function (data) {
-        if (data.conferences.length > 1) {
-          return data.conferences;
-        }
-
-        return data.conferences[0];
+      return Promise.resolve(get(url, 'conferences', options).then(function (res) {
+        return res;
       })).then(function (_get$then) {
         response = _get$then;
         return Promise.resolve(response);
@@ -129,12 +134,8 @@ var getDivisions = function getDivisions(options) {
     var response;
     var url = handleUrl('divisions', options);
     return Promise.resolve(_catch(function () {
-      return Promise.resolve(get(url, options).then(function (data) {
-        if (data.divisions.length > 1) {
-          return data.divisions;
-        }
-
-        return data.divisions[0];
+      return Promise.resolve(get(url, 'divisions', options).then(function (res) {
+        return res;
       })).then(function (_get$then) {
         response = _get$then;
         return Promise.resolve(response);
@@ -161,8 +162,8 @@ var getDraft = function getDraft(options) {
     }
 
     return Promise.resolve(_catch(function () {
-      return Promise.resolve(get(url(), options).then(function (data) {
-        return data.drafts[0];
+      return Promise.resolve(get(url(), 'drafts', options).then(function (res) {
+        return res;
       })).then(function (_get$then) {
         response = _get$then;
         return Promise.resolve(response);
@@ -194,7 +195,7 @@ var getGame = function getGame(options) {
     }
 
     return Promise.resolve(_catch(function () {
-      return Promise.resolve(get(url(), options).then(function (data) {
+      return Promise.resolve(get(url(), undefined, options).then(function (data) {
         if (isFeed) {
           return {
             gamePk: data.gamePk,
@@ -223,8 +224,8 @@ var getGameTypes = function getGameTypes(options) {
     var response;
     var url = handleUrl('gameTypes', options);
     return Promise.resolve(_catch(function () {
-      return Promise.resolve(get(url, options).then(function (data) {
-        return data;
+      return Promise.resolve(get(url, 'gameTypes', options).then(function (res) {
+        return res;
       })).then(function (_get$then) {
         response = _get$then;
         return Promise.resolve(response);
@@ -265,24 +266,10 @@ var getPlayer = function getPlayer(options) {
     };
 
     var url = options.stats ? baseUrl() + "/stats" : baseUrl();
-
-    var handleData = function handleData(data) {
-      if (data.stats) {
-        if (data.stats.length > 1) {
-          return data.stats;
-        } else if (data.stats[0].splits.length > 1) {
-          return data.stats[0].splits;
-        }
-
-        return data.stats[0].splits[0];
-      }
-
-      return data.people[0];
-    };
-
+    var res = options.stats ? 'stats' : 'people';
     return Promise.resolve(_catch(function () {
-      return Promise.resolve(get(url, options).then(function (data) {
-        return handleData(data);
+      return Promise.resolve(get(url, res, options).then(function (data) {
+        return data;
       })).then(function (_get$then) {
         response = _get$then;
         return Promise.resolve(response);
@@ -300,7 +287,7 @@ var getPlayTypes = function getPlayTypes(options) {
     var response;
     var url = handleUrl('playTypes', options);
     return Promise.resolve(_catch(function () {
-      return Promise.resolve(get(url, options).then(function (data) {
+      return Promise.resolve(get(url, 'playTypes', options).then(function (data) {
         return data;
       })).then(function (_get$then) {
         response = _get$then;
@@ -319,12 +306,8 @@ var getProspects = function getProspects(options) {
     var response;
     var url = handleUrl('draft/prospects', options);
     return Promise.resolve(_catch(function () {
-      return Promise.resolve(get(url, options).then(function (data) {
-        if (data.prospects.length > 1) {
-          return data.prospects;
-        }
-
-        return data.prospects[0];
+      return Promise.resolve(get(url, 'prospects', options).then(function (res) {
+        return res;
       })).then(function (_get$then) {
         response = _get$then;
         return Promise.resolve(response);
@@ -359,12 +342,8 @@ var getSchedule = function getSchedule(options) {
     }
 
     return Promise.resolve(_catch(function () {
-      return Promise.resolve(get(url, options).then(function (data) {
-        if (data.dates.length > 1) {
-          return data.dates;
-        }
-
-        return data.dates[0];
+      return Promise.resolve(get(url, 'dates', options).then(function (data) {
+        return data;
       })).then(function (_get$then) {
         response = _get$then;
         return Promise.resolve(response);
@@ -387,12 +366,8 @@ var getSeasons = function getSeasons(options) {
     };
 
     return Promise.resolve(_catch(function () {
-      return Promise.resolve(get(url(), options).then(function (data) {
-        if (data.seasons.length > 1) {
-          return data.seasons;
-        }
-
-        return data.seasons[0];
+      return Promise.resolve(get(url(), 'seasons', options).then(function (res) {
+        return res;
       })).then(function (_get$then) {
         response = _get$then;
         return Promise.resolve(response);
@@ -415,7 +390,7 @@ var getStandings = function getStandings(options) {
     }
 
     return Promise.resolve(_catch(function () {
-      return Promise.resolve(get(url, options).then(function (data) {
+      return Promise.resolve(get(url, 'standings', options).then(function (data) {
         return data.records;
       })).then(function (_get$then) {
         response = _get$then;
@@ -434,7 +409,7 @@ var getStandingsTypes = function getStandingsTypes(options) {
     var response;
     var url = handleUrl('standingsTypes', options);
     return Promise.resolve(_catch(function () {
-      return Promise.resolve(get(url, options).then(function (data) {
+      return Promise.resolve(get(url, 'standingsTypes', options).then(function (data) {
         return data;
       })).then(function (_get$then) {
         response = _get$then;
@@ -470,7 +445,12 @@ var getTeams = function getTeams(options) {
       return team.isActive;
     });
     return Promise.resolve(_catch(function () {
-      return Promise.resolve(get(url, options).then(function (data) {
+      return Promise.resolve(api /// @ts-ignore
+      .get(url, options ? {
+        params: _extends({}, options)
+      } : null).then(function (response) {
+        return response.data;
+      }).then(function (data) {
         if (data.roster) {
           return data.roster;
         }
@@ -494,8 +474,8 @@ var getTeams = function getTeams(options) {
         }
 
         return data;
-      })).then(function (_get$then) {
-        response = _get$then;
+      })).then(function (_api$get$then$then) {
+        response = _api$get$then$then;
         return Promise.resolve(response);
       });
     }, function (err) {
@@ -511,12 +491,8 @@ var getVenues = function getVenues(options) {
     var response;
     var url = handleUrl('venues', options);
     return Promise.resolve(_catch(function () {
-      return Promise.resolve(get(url, options).then(function (data) {
-        if (data.venues.length > 1) {
-          return data.venues;
-        }
-
-        return data.venues[0];
+      return Promise.resolve(get(url, 'venues', options).then(function (res) {
+        return res;
       })).then(function (_get$then) {
         response = _get$then;
         return Promise.resolve(response);

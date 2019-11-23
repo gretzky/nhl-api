@@ -10,7 +10,7 @@ export default async function getPlayoffs(
   const url = handleUrl('tournaments/playoffs', options);
 
   try {
-    const response = await get(url, options).then(data => data);
+    const response = await get(url, 'playoffs', options).then(data => data);
     return Promise.resolve(response);
   } catch (err) {
     return throwError('getPlayoffs', err);

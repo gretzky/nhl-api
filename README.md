@@ -1,9 +1,5 @@
 # @nhl-api
 
-![GitHub package.json version](https://img.shields.io/github/package-json/v/gretzky/nhl-api)
-![Coveralls github](https://img.shields.io/coveralls/github/gretzky/nhl-api)
-![David](https://img.shields.io/david/dev/gretzky/nhl-api)
-
 NHL data and utilities to work with the NHL api.
 
 ## Packages

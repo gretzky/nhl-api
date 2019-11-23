@@ -12,12 +12,7 @@ export default async function getSeasons(
     options && options.season ? `${baseUrl}/${options.season}` : baseUrl;
 
   try {
-    const response = await get(url(), options).then((data: any) => {
-      if (data.seasons.length > 1) {
-        return data.seasons;
-      }
-      return data.seasons[0];
-    });
+    const response = await get(url(), 'seasons', options).then(res => res);
     return Promise.resolve(response);
   } catch (err) {
     return throwError('getSeasons', err);

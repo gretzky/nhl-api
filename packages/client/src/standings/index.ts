@@ -16,7 +16,9 @@ export default async function getStandings(
   }
 
   try {
-    const response = await get(url, options).then((data: any) => data.records);
+    const response = await get(url, 'standings', options).then(
+      (data: any) => data.records
+    );
     return Promise.resolve(response);
   } catch (err) {
     return throwError('getStandings', err);

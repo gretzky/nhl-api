@@ -22,7 +22,7 @@ export default async function getGame(options: GameOptions): Promise<void> {
   }
 
   try {
-    const response = await get(url(), options).then((data: any) => {
+    const response = await get(url(), undefined, options).then((data: any) => {
       if (isFeed) {
         return {
           gamePk: data.gamePk,

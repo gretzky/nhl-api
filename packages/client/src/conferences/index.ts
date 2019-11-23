@@ -6,12 +6,7 @@ export default async function getConferences(
   const url = handleUrl('conferences', options);
 
   try {
-    const response = await get(url, options).then((data: any) => {
-      if (data.conferences.length > 1) {
-        return data.conferences;
-      }
-      return data.conferences[0];
-    });
+    const response = await get(url, 'conferences', options).then(res => res);
     return Promise.resolve(response);
   } catch (err) {
     return throwError('getConferences', err);

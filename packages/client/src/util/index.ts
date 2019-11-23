@@ -27,7 +27,14 @@ export const handleUrl = (res: string, options?: BaseOptions): string => {
   return `/${res}`;
 };
 
-export async function get(url: string, options?: any): Promise<any> {
+const parseData = (res: string): any => {
+  if (Array.isArray(res) && res.length === 1) {
+    return res[0];
+  }
+  return res;
+};
+
+export async function get(url: string, res?: any, options?: any): Promise<any> {
   try {
     const response = await api
       .get(
@@ -40,7 +47,13 @@ export async function get(url: string, options?: any): Promise<any> {
             }
           : undefined
       )
-      .then((response: AxiosResponse) => response.data);
+      .then((response: AxiosResponse) => response.data)
+      .then((data: any) => {
+        if (data.hasOwnProperty(res)) {
+          return parseData(data[res]);
+        }
+        return data;
+      });
     return Promise.resolve(response);
   } catch (err) {
     return err;

@@ -15,9 +15,7 @@ export default async function getDraft(options?: DraftOptions): Promise<void> {
   }
 
   try {
-    const response = await get(url(), options).then(
-      (data: any) => data.drafts[0]
-    );
+    const response = await get(url(), 'drafts', options).then(res => res);
     return Promise.resolve(response);
   } catch (err) {
     return throwError('getDraft', err);

@@ -6,7 +6,7 @@ export default async function getPlayTypes(
   const url = handleUrl('playTypes', options);
 
   try {
-    const response = await get(url, options).then(data => data);
+    const response = await get(url, 'playTypes', options).then(data => data);
     return Promise.resolve(response);
   } catch (err) {
     return throwError('getPlayTypes', err);

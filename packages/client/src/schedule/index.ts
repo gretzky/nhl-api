@@ -28,12 +28,7 @@ export default async function getSchedule(
   }
 
   try {
-    const response = await get(url, options).then((data: any) => {
-      if (data.dates.length > 1) {
-        return data.dates;
-      }
-      return data.dates[0];
-    });
+    const response = await get(url, 'dates', options).then((data: any) => data);
     return Promise.resolve(response);
   } catch (err) {
     return throwError('getSchedule', err);

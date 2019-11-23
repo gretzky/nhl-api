@@ -1,5 +1,6 @@
 import teams from '@nhl-api/teams';
-import { throwError, get } from '../util';
+import { api, throwError } from '../util';
+import { AxiosResponse } from 'axios';
 interface TeamOptions {
   id?: string | number;
   name?: string;
@@ -38,30 +39,34 @@ export default async function getTeams(options?: TeamOptions): Promise<any> {
   const activeTeams = teams.filter((team: any) => team.isActive);
 
   try {
-    const response = await get(url, options).then((data: any) => {
-      if (data.roster) {
-        return data.roster;
-      }
-      if (data.stats) {
-        return data.stats.length > 1 ? data.stats : data.stats[0];
-      }
-      if (
-        data.teams.length > 1 &&
-        data.teams.some((d: any) => d.abbreviation)
-      ) {
-        return data.teams.map((d: any, i: number) =>
-          Object.assign({}, d, activeTeams[i])
-        );
-      }
-      if (data.teams[0].hasOwnProperty('abbreviation')) {
-        return Object.assign(
-          {},
-          data.teams[0],
-          activeTeams.find((team: any) => team.id === data.teams[0].id)
-        );
-      }
-      return data;
-    });
+    const response = await api
+      /// @ts-ignore
+      .get(url, options ? { params: { ...options } } : null)
+      .then((response: AxiosResponse) => response.data)
+      .then((data: any) => {
+        if (data.roster) {
+          return data.roster;
+        }
+        if (data.stats) {
+          return data.stats.length > 1 ? data.stats : data.stats[0];
+        }
+        if (
+          data.teams.length > 1 &&
+          data.teams.some((d: any) => d.abbreviation)
+        ) {
+          return data.teams.map((d: any, i: number) =>
+            Object.assign({}, d, activeTeams[i])
+          );
+        }
+        if (data.teams[0].hasOwnProperty('abbreviation')) {
+          return Object.assign(
+            {},
+            data.teams[0],
+            activeTeams.find((team: any) => team.id === data.teams[0].id)
+          );
+        }
+        return data;
+      });
     return Promise.resolve(response);
   } catch (err) {
     return throwError('getTeams', err);

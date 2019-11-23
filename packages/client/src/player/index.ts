@@ -40,22 +40,10 @@ export default async function getPlayer(options: PlayerOptions): Promise<void> {
 
   const url: string = options.stats ? `${baseUrl()}/stats` : baseUrl();
 
-  const handleData = (data: any) => {
-    if (data.stats) {
-      if (data.stats.length > 1) {
-        return data.stats;
-      } else if (data.stats[0].splits.length > 1) {
-        return data.stats[0].splits;
-      }
-      return data.stats[0].splits[0];
-    }
-    return data.people[0];
-  };
+  const res = options.stats ? 'stats' : 'people';
 
   try {
-    const response = await get(url, options).then((data: any) =>
-      handleData(data)
-    );
+    const response = await get(url, res, options).then((data: any) => data);
     return Promise.resolve(response);
   } catch (err) {
     return throwError('getPlayer', err);

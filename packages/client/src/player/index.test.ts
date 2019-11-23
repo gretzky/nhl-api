@@ -16,8 +16,12 @@ test('gets a players current stats', async () => {
     stats: 'statsSingleSeason',
   });
   expect(t).toHaveProperty(
-    'stat',
-    expect.objectContaining({ assists: expect.anything() })
+    'type',
+    expect.objectContaining({ displayName: 'statsSingleSeason' })
+  );
+  expect(t).toHaveProperty(
+    'splits',
+    expect.arrayContaining([expect.objectContaining({ season: '20192020' })])
   );
 });
 
@@ -27,15 +31,33 @@ test('gets a players stats for a given season', async () => {
     stats: 'statsSingleSeason',
     season: '20102011',
   });
-  expect(t).toHaveProperty('season', '20102011');
+  expect(t).toHaveProperty(
+    'type',
+    expect.objectContaining({ displayName: 'statsSingleSeason' })
+  );
+  expect(t).toHaveProperty(
+    'splits',
+    expect.arrayContaining([expect.objectContaining({ season: '20102011' })])
+  );
 });
 
 test('gets a players stats year by year', async () => {
   const t = await getPlayer({ name: 'ovechkin', stats: 'yearByYear' });
-  expect(t).toContainEqual(
-    expect.objectContaining({
-      league: expect.objectContaining({ name: 'Russia-3' }),
-    })
+  expect(t).toHaveProperty(
+    'type',
+    expect.objectContaining({ displayName: 'yearByYear' })
+  );
+  expect(t).toHaveProperty(
+    'splits',
+    expect.arrayContaining([expect.objectContaining({ season: '20012002' })])
+  );
+  expect(t).toHaveProperty(
+    'splits',
+    expect.arrayContaining([
+      expect.objectContaining({
+        league: expect.objectContaining({ name: 'Russia-3' }),
+      }),
+    ])
   );
 });
 
@@ -45,10 +67,17 @@ test('gets a players stats by win/loss', async () => {
     stats: 'winLoss',
     season: '20182019',
   });
-  expect(t).toContainEqual(
-    expect.objectContaining({
-      stat: expect.objectContaining({ assists: 46 }),
-    })
+  expect(t).toHaveProperty(
+    'type',
+    expect.objectContaining({ displayName: 'winLoss' })
+  );
+  expect(t).toHaveProperty(
+    'splits',
+    expect.arrayContaining([
+      expect.objectContaining({
+        stat: expect.objectContaining({ assists: 46 }),
+      }),
+    ])
   );
 });
 
@@ -58,10 +87,17 @@ test('gets a players stats by home/away', async () => {
     stats: 'homeAndAway',
     season: '20182019',
   });
-  expect(t).toContainEqual(
-    expect.objectContaining({
-      stat: expect.objectContaining({ gameWinningGoals: 7 }),
-    })
+  expect(t).toHaveProperty(
+    'type',
+    expect.objectContaining({ displayName: 'homeAndAway' })
+  );
+  expect(t).toHaveProperty(
+    'splits',
+    expect.arrayContaining([
+      expect.objectContaining({
+        stat: expect.objectContaining({ gameWinningGoals: 7 }),
+      }),
+    ])
   );
 });
 
@@ -71,10 +107,17 @@ test('gets a players stats by month', async () => {
     stats: 'byMonth',
     season: '20062007',
   });
-  expect(t).toContainEqual(
-    expect.objectContaining({
-      month: 1,
-    })
+  expect(t).toHaveProperty(
+    'type',
+    expect.objectContaining({ displayName: 'byMonth' })
+  );
+  expect(t).toHaveProperty(
+    'splits',
+    expect.arrayContaining([
+      expect.objectContaining({
+        month: 1,
+      }),
+    ])
   );
 });
 
@@ -84,10 +127,17 @@ test('gets a players stats by day of week', async () => {
     stats: 'byDayOfWeek',
     season: '19961997',
   });
-  expect(t).toContainEqual(
-    expect.objectContaining({
-      dayOfWeek: 3,
-    })
+  expect(t).toHaveProperty(
+    'type',
+    expect.objectContaining({ displayName: 'byDayOfWeek' })
+  );
+  expect(t).toHaveProperty(
+    'splits',
+    expect.arrayContaining([
+      expect.objectContaining({
+        dayOfWeek: 3,
+      }),
+    ])
   );
 });
 
@@ -97,10 +147,17 @@ test('gets a players stats vs division', async () => {
     stats: 'vsDivision',
     season: '20082009',
   });
-  expect(t).toContainEqual(
-    expect.objectContaining({
-      opponentDivision: expect.objectContaining({ name: 'Central' }),
-    })
+  expect(t).toHaveProperty(
+    'type',
+    expect.objectContaining({ displayName: 'vsDivision' })
+  );
+  expect(t).toHaveProperty(
+    'splits',
+    expect.arrayContaining([
+      expect.objectContaining({
+        opponentDivision: expect.objectContaining({ name: 'Central' }),
+      }),
+    ])
   );
 });
 
@@ -110,23 +167,37 @@ test('gets a players stats vs conference', async () => {
     stats: 'vsConference',
     season: '20082009',
   });
-  expect(t).toContainEqual(
-    expect.objectContaining({
-      opponentConference: expect.objectContaining({ name: 'Eastern' }),
-    })
+  expect(t).toHaveProperty(
+    'type',
+    expect.objectContaining({ displayName: 'vsConference' })
+  );
+  expect(t).toHaveProperty(
+    'splits',
+    expect.arrayContaining([
+      expect.objectContaining({
+        opponentConference: expect.objectContaining({ name: 'Eastern' }),
+      }),
+    ])
   );
 });
 
 test('gets a players stats vs team', async () => {
   const t = await getPlayer({
-    name: 'Roberto Luongo',
+    name: 'roberto luongo',
     stats: 'vsTeam',
     season: '20172018',
   });
-  expect(t).toContainEqual(
-    expect.objectContaining({
-      opponent: expect.objectContaining({ name: 'Boston Bruins' }),
-    })
+  expect(t).toHaveProperty(
+    'type',
+    expect.objectContaining({ displayName: 'vsTeam' })
+  );
+  expect(t).toHaveProperty(
+    'splits',
+    expect.arrayContaining([
+      expect.objectContaining({
+        opponent: expect.objectContaining({ name: 'Boston Bruins' }),
+      }),
+    ])
   );
 });
 
@@ -136,7 +207,14 @@ test('gets a players stats for each game', async () => {
     stats: 'gameLog',
     season: '20162017',
   });
-  expect(t).toContainEqual(expect.objectContaining({ date: '2017-04-06' }));
+  expect(t).toHaveProperty(
+    'type',
+    expect.objectContaining({ displayName: 'gameLog' })
+  );
+  expect(t).toHaveProperty(
+    'splits',
+    expect.arrayContaining([expect.objectContaining({ date: '2017-04-06' })])
+  );
 });
 
 test('gets a players stat rankings', async () => {
@@ -146,8 +224,16 @@ test('gets a players stat rankings', async () => {
     season: '19851986',
   });
   expect(t).toHaveProperty(
-    'stat',
-    expect.objectContaining({ rankPoints: '2nd' })
+    'type',
+    expect.objectContaining({ displayName: 'regularSeasonStatRankings' })
+  );
+  expect(t).toHaveProperty(
+    'splits',
+    expect.arrayContaining([
+      expect.objectContaining({
+        stat: expect.objectContaining({ rankPoints: '2nd' }),
+      }),
+    ])
   );
 });
 
@@ -158,8 +244,16 @@ test('gets player goals by game situation', async () => {
     season: '20102011',
   });
   expect(t).toHaveProperty(
-    'stat',
-    expect.objectContaining({ gameWinningGoals: expect.anything() })
+    'type',
+    expect.objectContaining({ displayName: 'goalsByGameSituation' })
+  );
+  expect(t).toHaveProperty(
+    'splits',
+    expect.arrayContaining([
+      expect.objectContaining({
+        stat: expect.objectContaining({ gameWinningGoals: 4 }),
+      }),
+    ])
   );
 });
 
@@ -170,8 +264,16 @@ test('gets player projected stats', async () => {
     season: '20192020',
   });
   expect(t).toHaveProperty(
-    'stat',
-    expect.objectContaining({ assists: expect.anything() })
+    'type',
+    expect.objectContaining({ displayName: 'onPaceRegularSeason' })
+  );
+  expect(t).toHaveProperty(
+    'splits',
+    expect.arrayContaining([
+      expect.objectContaining({
+        stat: expect.objectContaining({ goals: expect.anything() }),
+      }),
+    ])
   );
 });
 

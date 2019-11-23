@@ -7,4 +7,4 @@ export declare type BaseOptions = {
 export declare const api: import("axios").AxiosInstance;
 export declare const throwError: (fn: string, msg?: string | undefined, err?: Error | undefined) => void;
 export declare const handleUrl: (res: string, options?: BaseOptions | undefined) => string;
-export declare function get(url: string, options?: any): Promise<any>;
+export declare function get(url: string, res?: any, options?: any): Promise<any>;
