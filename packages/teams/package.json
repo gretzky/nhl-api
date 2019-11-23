@@ -1,12 +1,11 @@
 {
   "name": "@nhl-api/teams",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "license": "MIT",
-  "main": "dist/index.js",
-  "module": "dist/teams.esm.js",
-  "typings": "dist/index.d.ts",
+  "main": "lib/src/index.js",
+  "types": "lib/src/index.d.ts",
   "files": [
-    "dist"
+    "lib"
   ],
   "publishConfig": {
     "access": "public"
@@ -17,7 +16,8 @@
     "url": "https://github.com/gretzky/nhl-api"
   },
   "scripts": {
-    "build": "tsdx build"
+    "clean": "rimraf lib",
+    "build": "tsc -b"
   },
   "gitHead": "f500b6b2fdc732cb44d87cf9f0b10534dae5193a"
 }
