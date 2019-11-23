@@ -1,6 +1,6 @@
 {
   "name": "@nhl-api/teams",
-  "version": "2.1.0-alpha.0",
+  "version": "2.1.1-alpha.0",
   "license": "MIT",
   "author": "gretzky",
   "main": "dist/index.js",
@@ -13,5 +13,6 @@
     "build": "tsdx build",
     "test": "tsdx test",
     "lint": "tsdx lint"
-  }
+  },
+  "gitHead": "2b412242eb7b0faedff7dd96ec4ad905f6048add"
 }
