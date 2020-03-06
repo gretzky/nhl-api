@@ -4,7 +4,7 @@ export default [
     name: "NEW JERSEY DEVILS",
     abbreviation: "NJD",
     nicknames: ["DEVS"],
-    colors: ["#F47A38", "#B9975C", "#C1C6C8", "#000"],
+    colors: ["#CE1126", "#000", "#FFF"],
     logo:
       "https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/New_Jersey_Devils_logo.svg/594px-New_Jersey_Devils_logo.svg.png",
     goalHorn:
@@ -60,7 +60,7 @@ export default [
     name: "PITTSBURGH PENGUINS",
     abbreviation: "PIT",
     nicknames: ["SHITTSBURGH", "PENS"],
-    colors: ["#000", "#CFC493", "#FCB514", "#FFF"],
+    colors: ["#FCB514", "#000", "#CFC493", "#FFF"],
     logo:
       "https://upload.wikimedia.org/wikipedia/en/thumb/c/c0/Pittsburgh_Penguins_logo_%282016%29.svg/440px-Pittsburgh_Penguins_logo_%282016%29.svg.png",
     goalHorn:
@@ -74,7 +74,7 @@ export default [
     name: "BOSTON BRUINS",
     abbreviation: "BOS",
     nicknames: ["B'S", "BIG BAD BRUINS", "BLACK AND GOLD"],
-    colors: ["#000", "#FFB81C"],
+    colors: ["#FFB81C", "#000"],
     logo:
       "https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Boston_Bruins.svg/440px-Boston_Bruins.svg.png",
     goalHorn:
@@ -144,7 +144,7 @@ export default [
     name: "ATLANTA THRASHERS",
     abbreviation: "ATL",
     nicknames: ["THRASH"],
-    colors: ["#041E42", "#5C88DA", "#862633", "#B76125", "#FFA300", "#FFF"],
+    colors: ["#5C88DA", "#041E42", "#862633", "#B76125", "#FFA300", "#FFF"],
     logo:
       "https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Atlanta_Thrashers.svg/440px-Atlanta_Thrashers.svg.png",
     goalHorn:
@@ -172,7 +172,7 @@ export default [
     name: "FLORIDA PANTHERS",
     abbreviation: "FLA",
     nicknames: ["CATS"],
-    colors: ["#041E42", "#C8102E", "#B9975B"],
+    colors: ["#C8102E", "#041E42", "#B9975B"],
     logo:
       "https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Florida_Panthers_2016_logo.svg/440px-Florida_Panthers_2016_logo.svg.png",
     goalHorn:
@@ -200,7 +200,7 @@ export default [
     name: "WASHINGTON CAPITALS",
     abbreviation: "WSH",
     nicknames: ["CAPS", "SECOND ROUND EXIT"],
-    colors: ["#041E42", "#C8102E", "#FFF"],
+    colors: ["#C8102E", "#041E42", "#FFF"],
     logo:
       "https://upload.wikimedia.org/wikipedia/en/thumb/2/2d/Washington_Capitals.svg/440px-Washington_Capitals.svg.png",
     goalHorn:
@@ -307,7 +307,7 @@ export default [
     name: "EDMONTON OILERS",
     abbreviation: "EDM",
     nicknames: ["SPOILERS"],
-    colors: ["#041E42", "#FF4C00"],
+    colors: ["#FF4C00", "#041E42"],
     logo:
       "https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/Logo_Edmonton_Oilers.svg/440px-Logo_Edmonton_Oilers.svg.png",
     goalHorn:
@@ -372,7 +372,7 @@ export default [
     name: "LOS ANGELES KINGS",
     abbreviation: "LAK",
     nicknames: ["MONARCHS"],
-    colors: ["#111", "#A2AAAD", "#FFF", "#572A84", "#FFC80C"],
+    colors: ["#A2AAAD", "#111", "#FFF", "#572A84", "#FFC80C"],
     logo:
       "https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Los_Angeles_Kings_logo.svg/440px-Los_Angeles_Kings_logo.svg.png",
     goalHorn:
@@ -436,7 +436,7 @@ export default [
     name: "MINNESOTA WILD",
     abbreviation: "MIN",
     nicknames: ["MINNY", "MILD", "MANBEARPIGS"],
-    colors: ["#A6192E", "#154734", "#EAAA00", "#DDCBA4"],
+    colors: ["#154734", "#A6192E", "#EAAA00", "#DDCBA4"],
     logo:
       "https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/Minnesota_Wild.svg/440px-Minnesota_Wild.svg.png",
     goalHorn:
