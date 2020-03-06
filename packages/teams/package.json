@@ -1,6 +1,6 @@
 {
   "name": "@nhl-api/teams",
-  "version": "3.1.2",
+  "version": "3.1.3",
   "license": "MIT",
   "main": "lib/src/index.js",
   "types": "lib/src/index.d.ts",
@@ -19,5 +19,5 @@
     "clean": "rimraf lib",
     "build": "tsc -b"
   },
-  "gitHead": "c4cd617800eff04ed5f264f67e98ad3c4dd96d64"
+  "gitHead": "23761cb05414622e67e60aaec5d2699ccb5c64b7"
 }
