@@ -31,5 +31,3 @@ export default {
   getTeams,
   getVenues
 };
-
-export * from "./types";
