@@ -1,6 +1,6 @@
 {
   "name": "@nhl-api/players",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "license": "MIT",
   "main": "lib/src/index.js",
   "types": "lib/src/index.d.ts",
@@ -19,5 +19,5 @@
     "clean": "rimraf lib",
     "build": "tsc -b"
   },
-  "gitHead": "f500b6b2fdc732cb44d87cf9f0b10534dae5193a"
+  "gitHead": "c4cd617800eff04ed5f264f67e98ad3c4dd96d64"
 }
