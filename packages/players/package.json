@@ -1,0 +1,42 @@
+{
+  "name": "@nhl-api/players",
+  "version": "4.0.0",
+  "author": "Sara Pope <sarafpope@gmail.com>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/client.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint --fix",
+    "prepare": "tsdx build"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "husky": "^4.2.3",
+    "tsdx": "^0.13.0",
+    "tslib": "^1.11.1",
+    "typescript": "^3.8.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": false
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "nhl-api",
+  "version": "4.0.0",
+  "main": "index.js",
+  "author": "Sara Pope <sarafpope@gmail.com>",
+  "repository": "https://github.com/gretzky/nhl-api.git",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "lint": "lerna run lint",
+    "test": "lerna run test",
+    "build": "lerna run build",
+    "publish": "lerna publish --force-publish",
+    "postinstall": "lerna bootstrap",
+    "prepare": "lerna run prepare"
+  },
+  "devDependencies": {
+    "lerna": "^3.20.2"
+  }
+}

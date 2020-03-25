@@ -1,0 +1,29 @@
+{
+  "extends": "./tsconfig.lib.json",
+  "include": ["packages", "graphql"],
+  "exclude": ["node_modules", "dist", "__tests__", "**/*.test*", "**/*.spec*"],
+  "compilerOptions": {
+    "baseUrl": "./",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true
+  },
+  "references": [
+    {
+      "path": "./packages/client"
+    },
+    {
+      "path": "./packages/graphql"
+    },
+    {
+      "path": "./packages/play-by-play"
+    },
+    {
+      "path": "./packages/players"
+    },
+    {
+      "path": "./packages/teams"
+    }
+  ]
+}
