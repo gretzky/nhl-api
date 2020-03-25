@@ -1,27 +1,58 @@
-# TSDX Bootstrap
+# @nhl-api/teams
 
-This project was bootstrapped with [TSDX](https://github.com/jaredpalmer/tsdx).
+A list of every NHL team that ever existed.
 
-## Local Development
+```bash
+yarn add @nhl-api/teams
+```
 
-Below is a list of commands you will probably find useful.
+## Usage
 
-### `npm start` or `yarn start`
+`teams.json` is an array of objects containing 5 key/value pairs:
 
-Runs the project in development/watch mode. Your project will be rebuilt upon changes. TSDX has a special logger for you convenience. Error messages are pretty printed and formatted for compatibility VS Code's Problems tab.
+- **`id`**: (number) a unique number which you can use to to find more team info with the [NHL API](https://statsapi.web.nhl.com/api/v1).
+- **`name`**: full name (location, name) of the team
+- **`abbreviation`**: team abbreviation code
+- **`nicknames`**: any well-known nicknames the team has
+- **`colors`**: color scheme of each team (includes retired or alternate jersey colors)
+- **`logo`**: primary team logo (transparent SVG)
+- **`goalHorn`**: team goal horn (no song) between 5-10s
+- **`goalHornSong`**: team goal horn with song (full track)
+- **`isActive**: boolean to filter currently active teams
 
-<img src="https://user-images.githubusercontent.com/4060187/52168303-574d3a00-26f6-11e9-9f3b-71dbec9ebfcb.gif" width="600" />
+There's also a helper function available (`getTeamId`) that matches a passed param to either the team's location, name, or nickname and returns the ID.
 
-Your library will be rebuilt if you make edits.
+```ts
+import teams, { getTeamId } from "@nhl-api/teams";
+import axios from "axios"; // for http requests
 
-### `npm run build` or `yarn build`
+// at its simplest, you can do whatever you want with the full list
+// (teams.map(t => t.name))
 
-Bundles the package to the `dist` folder.
-The package is optimized and bundled with Rollup into multiple formats (CommonJS, UMD, and ES Module).
+// using the `getTeamId` helper,
+// you can get the team id from the team name
+const bruinsId = getTeamId("boston bruins");
+// or part of the team name
+const bruinsId = getTeamId("boston");
+// or a nickname
+const bruinsId = getTeamId("big bad bruins");
+// all return the id - 6
 
-<img src="https://user-images.githubusercontent.com/4060187/52168322-a98e5b00-26f6-11e9-8cf6-222d716b75ef.gif" width="600" />
+// you can then use the id to make api calls to endpoints related to team stats/info
+axios
+  .get(`https://statsapi.web.nhl.com/api/v1/teams/${bruinsId}`)
+  .then(response => response.data)
+  .then(data => data);
+```
 
-### `npm test` or `yarn test`
+## Props
 
-Runs the test watcher (Jest) in an interactive mode.
-By default, runs tests related to files changed since the last commit.
+All this made possible by [Drew Hynes' NHL API Documentation](https://gitlab.com/dword4/nhlapi).
+
+## Contributing
+
+Please open an issue if you find any discrepancies, or you think something is missing.
+
+---
+
+built with [skeletor](https://github.com/gretzky/skeletor) 💀

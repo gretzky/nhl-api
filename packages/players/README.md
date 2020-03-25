@@ -1,27 +1,80 @@
-# TSDX Bootstrap
+# @nhl-api/players
 
-This project was bootstrapped with [TSDX](https://github.com/jaredpalmer/tsdx).
+A list of all 16,892 NHL players to ever step on the ice\*
 
-## Local Development
+<sup>\*Probably. Some may be missing or duplicated. YMMV.</sup>
 
-Below is a list of commands you will probably find useful.
+```bash
+yarn add @nhl-api/players
+```
 
-### `npm start` or `yarn start`
+## Usage
 
-Runs the project in development/watch mode. Your project will be rebuilt upon changes. TSDX has a special logger for you convenience. Error messages are pretty printed and formatted for compatibility VS Code's Problems tab.
+### `players.ts`
 
-<img src="https://user-images.githubusercontent.com/4060187/52168303-574d3a00-26f6-11e9-9f3b-71dbec9ebfcb.gif" width="600" />
+The main entree of this package. An array of objects containing 3 key/value pairs:
 
-Your library will be rebuilt if you make edits.
+- **`id`**: (number) a unique number which you can use to to find more player info with the [NHL API](https://statsapi.web.nhl.com/api/v1).
+- **`name`**: the player's first and last name as shown on a roster-- i.e. Ace Bailey (not Irving Bailey), Zach Aston-Reese (not Zachary), etc.
 
-### `npm run build` or `yarn build`
+### `getPlayerById(id)`
 
-Bundles the package to the `dist` folder.
-The package is optimized and bundled with Rollup into multiple formats (CommonJS, UMD, and ES Module).
+Gets a player by their ID.
 
-<img src="https://user-images.githubusercontent.com/4060187/52168322-a98e5b00-26f6-11e9-8cf6-222d716b75ef.gif" width="600" />
+### `getPlayerId(name)`
 
-### `npm test` or `yarn test`
+Gets a player's ID by first name, last name, both, or a nickname.
 
-Runs the test watcher (Jest) in an interactive mode.
-By default, runs tests related to files changed since the last commit.
+If multiple players match the queried name param, an array of matching players is returned.
+
+### `getPlayerMugshot(options)`
+
+Gets a URL to an image of a given player by season and team. **Note:** This only works for **currently active** players.
+
+Params:
+
+- `id`: ID of a player to find _or_ `name`: name/nickname of player
+- `season`: the season to get the headshot from (optional, defaults to current season)
+- `team`: the team (abbreviation) that the player is on during the season specified. This may default to a particular headshot for the player if they were on multiple teams.
+
+```ts
+import players, { getPlayerId, getPlayerMugshot } from "@nhl-api/players";
+import axios from "axios"; // for http requests
+
+// at its simplest, you can do whatever you want with the list of players
+// (players.map(p => p.fullName))
+
+// you can get a url to an image of the player with this fn
+// note: only works with currently active players
+const kovy = getPlayerMugshot({
+  name: "ilya kovalchuk",
+  team: "atl",
+  season: "20062007"
+});
+
+// using the `getPlayerId` helper,
+// you can get the player's id from their name
+const gretzkyId = getPlayerId("wayne gretzky");
+// or part of the players name
+const gretzkyId = getPlayerId("gretzky");
+// all return the players id - 8447400
+// or an array of players if more than 1 player matches a name
+
+// you can then use the id to make api calls to endpoints related to player stats/info
+axios
+  .get(`https://statsapi.web.nhl.com/api/v1/people/${gretzkyId}`)
+  .then(response => response.data)
+  .then(data => data);
+```
+
+## Props
+
+All this made possible by [Drew Hynes' NHL API Documentation](https://gitlab.com/dword4/nhlapi).
+
+## Contributing
+
+Please open an issue if you find that there's a player missing/duplicated, or the ID mapped to a particular player is incorrect.
+
+---
+
+built with [skeletor](https://github.com/gretzky/skeletor) 💀
