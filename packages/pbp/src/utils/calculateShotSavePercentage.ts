@@ -4,8 +4,14 @@
  * @param goals - number of goals scored
  * @param shots - number of shots taken
  */
-export const calculateShotPercentage = (goals: number, shots: number): number =>
-  Number(((goals / shots) * 100).toFixed(1));
+export const calculateShotPercentage = (
+  goals: number,
+  shots: number
+): number => {
+  const shotPercentage = (goals / shots) * 100;
+
+  return Number(shotPercentage.toFixed(1));
+};
 
 /**
  * calculateSavePercentage - get the save percentage for a given player/team based on saves vs shots
@@ -18,5 +24,7 @@ export const calculateSavePercentage = (
   shots: number
 ): number => {
   const saves = shots - goals;
-  return Number(((saves / shots) * 100).toFixed(2));
+  const savePercentage = (saves / shots) * 100;
+
+  return Number(savePercentage.toFixed(2));
 };
