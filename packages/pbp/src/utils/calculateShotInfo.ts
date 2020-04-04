@@ -50,6 +50,6 @@ export const calculateShotInfo = (
 
   return {
     shotAngle,
-    shotDistance
+    shotDistance,
   };
 };

@@ -1,7 +1,7 @@
 import {
   calculateShotDistance,
   calculateShotAngle,
-  calculateShotInfo
+  calculateShotInfo,
 } from "../calculateShotInfo";
 
 describe("calculateShotDistance", () => {
@@ -11,7 +11,7 @@ describe("calculateShotDistance", () => {
     [-52, 15, 39.92],
     [83, -5, 7.81],
     [29, -11, 61],
-    [47, 18, 45.69]
+    [47, 18, 45.69],
   ])("with x %p and y %p, shot distance is %p", (x, y, expected) => {
     const expectedResult = calculateShotDistance(x, y);
 
@@ -26,10 +26,22 @@ describe("calculateShotAngle", () => {
     [-52, 15, 22.07],
     [83, -5, 39.81],
     [29, -11, 10.39],
-    [47, 18, 23.2]
+    [47, 18, 23.2],
   ])("with x %p and y %p, shot angle is %p", (x, y, expected) => {
     const expectedResult = calculateShotAngle(x, y);
 
     expect(expected).toEqual(expectedResult);
+  });
+});
+
+describe("calculateShotInfo", () => {
+  it("returns both the shot angle and distance", () => {
+    const result = calculateShotInfo(29, -11);
+    const expectedResult = {
+      shotAngle: 10.39,
+      shotDistance: 61,
+    };
+
+    expect(result).toEqual(expectedResult);
   });
 });
