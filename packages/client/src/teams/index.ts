@@ -4,15 +4,7 @@ import { api, throwError, Options, handleUrl, handleData } from "../util";
 
 export default async function getTeams(options?: Options): Promise<any> {
   const baseUrl = handleUrl("teams", options);
-  let url;
-
-  if (options && options.expand && options.expand.includes("roster")) {
-    url = `${baseUrl}/roster`;
-  } else if (options && options.expand && options.expand.includes("stats")) {
-    url = `${baseUrl}/stats`;
-  } else {
-    url = baseUrl;
-  }
+  let url = baseUrl;
 
   if (options && options.expand) {
     options.expand = `team.${options.expand}`;
